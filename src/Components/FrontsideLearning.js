@@ -20,12 +20,11 @@ export const FrontsideLearning = (()=>{
                     gridColumnStart: 3,
                     gridColumnEnd: 5,
                     gridRowStart: 2,
-                    gridRowEnd: 2,
-                    marginBottom: '1rem'
+                    gridRowEnd: 2
                    
                    
                 }}>
-                   <H2 >Læring</H2>
+                   <H2>Læring</H2>
                 </div>
                     <div
                     style={{
@@ -68,7 +67,7 @@ export const FrontsideLearning = (()=>{
 
                     </div>
 
-                    <LButton style={{gridColumnStart: '3', gridColumnEnd: '4', gridRowStart: 4, gridRowEnd:'4', marginBottom:'2rem', marginTop: '1rem'}}>Se Mer</LButton>
+                    <LButton style={{gridColumnStart: '3', gridColumnEnd: '3', gridRowStart: 4, gridRowEnd:'4', marginBottom:'2rem', marginTop: '1rem'}}>Se Mer</LButton>
 
             </FLearningStyle>
         </div>

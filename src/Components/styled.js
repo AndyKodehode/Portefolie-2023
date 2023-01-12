@@ -138,10 +138,19 @@ export const BotomHeaderDiv = styled.div`
   width: 60rem;
  }
 
-
-
 `
 
+export const MegSelv = styled.button`
+
+width: 6rem;
+height: 2rem;
+background-color: transparent;
+margin-left: 1.3rem;
+border-radius: 5px;
+border-style: solid;
+border-color:  #70ACE0;
+margin-top: 1rem;
+`
 
 export const HeaderP = styled.p`
 //styleName: Portefolie/Montserrat/mobil/p;
@@ -217,6 +226,7 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+margin-top: 10rem;
 
 @media(min-width: 700px){
 
@@ -437,8 +447,7 @@ border-color: lightblue;
 //LEARINGSECTION
 
 export const FLearningStyle = styled.div`
-
-width: 20rem;
+width: 23rem;
 height: 19rem;
 background-color: #95E5CC;
 display: grid;
@@ -448,7 +457,7 @@ margin-bottom: 5rem;
 
 @media( min-width: 700px){
    width: 30rem;
-   height: 26rem;
+   height: 25rem;
    margin-top: 5rem;
 
 }
@@ -482,6 +491,7 @@ border-color: white;
 background-color: transparent;
 color: white;
 border-radius: 5px;
+margin-bottom: 3rem;
 
 @media( min-width: 700px){
 
@@ -498,9 +508,10 @@ object-fit: cover;
 
 @media(min-width: 700px){
 
-  width: 10rem;
-  height: 9rem;
+  width: 12rem;
+  height: 11rem;
   margin-left: 1rem;
+  margin-bottom: 2rem;
 }
 
 `

@@ -7,6 +7,7 @@ import { Nav } from "./Nav"
 import { HeaderImgDiv} from "./styled"
 import { BlueBox } from "./styled"
 import { BotomHeaderDiv } from "./styled"
+import { MegSelv } from "./styled"
 
 export const Header = (()=>{
 
@@ -27,12 +28,15 @@ export const Header = (()=>{
            
               <BotomHeaderDiv>
                    
-                   <div>
+                   <div style={{display:'flex', flexDirection:'column'}}>
                         <HeaderP>
                         Jeg liker veldig godt å finne nye løsninger på problemer, både når det gjelder design og brukervennlighet.  
                         Har fullført frontend kurs gjennom Kodehode og lærer design på egenhånd.
 
                         </HeaderP>
+
+                        <MegSelv>Mer om meg</MegSelv>
+
 
                   </div>
 
