@@ -42,7 +42,7 @@ export const Header = (()=>{
 
                   <div>
                         <HeaderImgDiv>
-                            <img src="/Img/meg selv.jpg" alt="meg selv" style={{width: '80%'}}/>
+                            <img src="./Img/meg selv.jpg" alt="meg selv" style={{width: '80%'}}/>
                         </HeaderImgDiv>
                         <BlueBox></BlueBox>
                   </div>
