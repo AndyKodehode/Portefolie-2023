@@ -63,7 +63,7 @@ export const FrontsideLearning = (()=>{
                     
                     
                     >
-                      <LearningImg src="/Img/FangWin.jpg" alt="læringsbilde"/>
+                      <LearningImg src=  {process.env.PUBLIC_URL+ "/Img/FangWin.jpg"} alt="læringsbilde"/>
 
                     </div>
 

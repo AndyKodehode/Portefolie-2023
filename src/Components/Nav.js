@@ -2,6 +2,8 @@ import { NavStyled } from "./styled"
 import { NavText } from "./styled"
 import { NavP } from "./styled"
 
+
+
 export const Nav = (()=>{
 
     return(
@@ -12,7 +14,7 @@ export const Nav = (()=>{
                 <NavP>Kontakt</NavP>
                 <NavP>Kurs</NavP>
             </NavText>
-            <img  src="/Img/Hamburger-mobil.svg" alt="hamburger meny" style={{marginRight: '1rem'}}/>
+            <img  src={ process.env.PUBLIC_URL+"/Img/Hamburger-mobil.svg" } alt="hamburger meny" style={{marginRight: '1rem', marginTop:'1rem', width: '2rem'}} />
         </NavStyled>
 
     )

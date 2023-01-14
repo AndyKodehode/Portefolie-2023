@@ -47,7 +47,7 @@ return(
         gridRowEnd: 4
         }} 
       >
-          <FrameImgOne src="/Img/mobil kopi.png" alt="trying to figure this out"/>
+          <FrameImgOne src={process.env.PUBLIC_URL+"/Img/mobil kopi.png" }alt="trying to figure this out"/>
 
       </div>
      
@@ -81,7 +81,7 @@ return(
            }}>
       
            
-           <FrameImgTwo src="/Img/TipCalculator kuttet.jpg" alt="next"/>
+           <FrameImgTwo src={process.env.PUBLIC_URL+"/Img/TipCalculator kuttet.jpg"} alt="next"/>
       </div>
       
      
@@ -114,7 +114,7 @@ return(
            }}>
       
            
-           <FrameImgThree src="/Img/Colloseum kuttet.jpg" alt="next"/>
+           <FrameImgThree src={process.env.PUBLIC_URL+"/Img/Colloseum kuttet.jpg" }alt="next"/>
       </div>
     </Frame>
   

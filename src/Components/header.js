@@ -8,6 +8,9 @@ import { HeaderImgDiv} from "./styled"
 import { BlueBox } from "./styled"
 import { BotomHeaderDiv } from "./styled"
 import { MegSelv } from "./styled"
+import { About } from "../Pages/About"
+import { Link } from "react-router-dom"
+// import { Image } from "react-render-image/dist/index.cjs"
 
 export const Header = (()=>{
 
@@ -35,14 +38,19 @@ export const Header = (()=>{
 
                         </HeaderP>
 
-                        <MegSelv>Mer om meg</MegSelv>
+                        <MegSelv >
+                           <Link style={{textDecoration: 'none'}} to='/About'>Mer om meg</Link>
+                        </MegSelv>
+                      
 
 
                   </div>
 
                   <div>
                         <HeaderImgDiv>
-                            <img src="./Img/meg selv.jpg" alt="meg selv" style={{width: '80%'}}/>
+                             {/* <img src={require('./Img/meg selv.jpg')}/> */}
+                            <img src={process.env.PUBLIC_URL + "/Img/meg selv.jpg"} alt="meg selv" style={{width: '80%'}}/>
+                           
                         </HeaderImgDiv>
                         <BlueBox></BlueBox>
                   </div>

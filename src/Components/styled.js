@@ -457,7 +457,7 @@ margin-bottom: 5rem;
 
 @media( min-width: 700px){
    width: 30rem;
-   height: 25rem;
+   height: 23rem;
    margin-top: 5rem;
 
 }
