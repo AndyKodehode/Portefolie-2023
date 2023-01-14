@@ -8,7 +8,6 @@ import { HeaderImgDiv} from "./styled"
 import { BlueBox } from "./styled"
 import { BotomHeaderDiv } from "./styled"
 import { MegSelv } from "./styled"
-import { About } from "../Pages/About"
 import { Link } from "react-router-dom"
 // import { Image } from "react-render-image/dist/index.cjs"
 
@@ -39,7 +38,7 @@ export const Header = (()=>{
                         </HeaderP>
 
                         <MegSelv >
-                           <Link style={{textDecoration: 'none'}} to='/About'>Mer om meg</Link>
+                           <Link style={{textDecoration: 'none', color: 'inherit'}} to='/About'>Mer om meg</Link>
                         </MegSelv>
                       
 

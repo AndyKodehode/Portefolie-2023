@@ -8,6 +8,8 @@ import { FrameImgOne } from "../Components/styled"
 import { FrameImgTwo } from "../Components/styled"
 import { FrameImgThree } from "../Components/styled"
 import { FrameOneDiv } from "../Components/styled"
+import { Link } from "react-router-dom"
+
 
 
 
@@ -17,106 +19,116 @@ export const Prosjectframes = (()=>{
 
 return(
 <FrameFlexDiv>
-
-    <Frame   style={{
-      backgroundColor: '#95E5CC'
-    }}>
-      <FrameOneDiv>
-      <H2div>
-          <H2>Fontenehuset-app</H2>
-      </H2div>
-
-       
-
-       <H3div>
-          <H3>
-            App designet for brukere av 
-            Fontenehuset Bergen
-          </H3>
-        </H3div>
-      </FrameOneDiv>
-
-        
-
-
-        
-      <div
-      style={{
-        gridColumn: 1,
-        gridRowStart:1,
-        gridRowEnd: 4
-        }} 
-      >
-          <FrameImgOne src={process.env.PUBLIC_URL+"/Img/mobil kopi.png" }alt="trying to figure this out"/>
-
-      </div>
      
-    </Frame>
-
-    <Frame   style={{
-      backgroundColor: '#CCDE54'
-     }}>
-    
-       <H2div>
-         <H2>Tips-kalkulator</H2>
-       </H2div>
-    
-     
-
-      <H3div>
-          <H3>
-            Tips kalkulator fra Front-end mentor
-          </H3>
-      </H3div>
-
+    <Link to='/Fontenehus' style={{textDecoration: 'none', color: 'inherit'}}>
+        <Frame   style={{
+          backgroundColor: '#95E5CC'
+        }}>
         
-      
+              <FrameOneDiv>
+              <H2div>
+                  <H2>Fontenehuset-app</H2>
+              </H2div>
+        
+              
 
-      <div
+              <H3div>
+                  <H3>
+                    App designet for brukere av 
+                    Fontenehuset Bergen
+                  </H3>
+                </H3div>
+              </FrameOneDiv>
 
-      style={{
-        gridColumn: 1,
-        gridRowStart:1,
-        gridRowEnd: 4
-           }}>
-      
-           
-           <FrameImgTwo src={process.env.PUBLIC_URL+"/Img/TipCalculator kuttet.jpg"} alt="next"/>
-      </div>
-      
-     
-    </Frame>
+                
 
+
+                
+              <div
+              style={{
+                gridColumn: 1,
+                gridRowStart:1,
+                gridRowEnd: 4
+                }} 
+              >
+                  <FrameImgOne src={process.env.PUBLIC_URL+"/Img/mobil kopi.png" }alt="trying to figure this out"/>
+
+              </div>
+        
+        </Frame>
+    </Link>
+   
+
+
+    <Link to='/TipCalculator' style={{textDecoration: 'none', color: 'inherit'}}>
+        <Frame   style={{
+          backgroundColor: '#CCDE54'
+        }}>
+        
+              <H2div>
+                <H2>Tips-kalkulator</H2>
+              </H2div>
+            
+            
+
+              <H3div>
+                  <H3>
+                    Tips kalkulator fra Front-end mentor
+                  </H3>
+              </H3div>
+
+                
+              
+
+              <div
+
+              style={{
+                gridColumn: 1,
+                gridRowStart:1,
+                gridRowEnd: 4
+                  }}>
+              
+                  
+                  <FrameImgTwo src={process.env.PUBLIC_URL+"/Img/TipCalculator kuttet.jpg"} alt="next"/>
+              </div>
+              
+        
+        </Frame>
+    </Link>
+
+
+    <Link to='/StreamingApp' style={{textDecoration: 'none', color: 'inherit'}}>
     <Frame   style={{
       backgroundColor: '#70ACE0'
     }}>
       
 
-      <H2div>
-         <H2>Streaming-app</H2>
-      </H2div>
+          <H2div>
+            <H2>Streaming-app</H2>
+          </H2div>
 
-      <H3div>
-          <H3
-          style={{color:'#39454F'}}
-          >
-            Design av streaming app i Adobe XD
-          </H3>
-      </H3div>
-     
+          <H3div>
+              <H3
+              style={{color:'#39454F'}}
+              >
+                Design av streaming app i Adobe XD
+              </H3>
+          </H3div>
+        
 
-      <div
+          <div
 
-      style={{
-        gridColumn: 1,
-        gridRowStart:1,
-        gridRowEnd: 4
-           }}>
-      
-           
-           <FrameImgThree src={process.env.PUBLIC_URL+"/Img/Colloseum kuttet.jpg" }alt="next"/>
-      </div>
-    </Frame>
+          style={{
+            gridColumn: 1,
+            gridRowStart:1,
+            gridRowEnd: 4
+              }}>
+          
+              
+              <FrameImgThree src={process.env.PUBLIC_URL+"/Img/Colloseum kuttet.jpg" }alt="next"/>
+          </div>
+        </Frame>
+      </Link>
   
     </FrameFlexDiv>
 )

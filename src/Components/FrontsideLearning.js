@@ -3,10 +3,12 @@ import { H2 } from "./styled"
 import { BodyP } from "./styled"
 import { LButton } from "./styled"
 import { LearningImg } from "./styled"
+import { Link } from "react-router-dom"
 
 export const FrontsideLearning = (()=>{
 
     return(
+        <Link to='/Learning' style={{textDecoration: 'none', color: 'inherit'}}>
         <div style={{
            display: 'flex',
            justifyContent: 'center',
@@ -71,5 +73,6 @@ export const FrontsideLearning = (()=>{
 
             </FLearningStyle>
         </div>
+        </Link>
     )
 })
