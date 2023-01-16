@@ -8,7 +8,7 @@ import { Link } from "react-router-dom"
 export const FrontsideLearning = (()=>{
 
     return(
-        <Link to='/Learning' style={{textDecoration: 'none', color: 'inherit'}}>
+       
         <div style={{
            display: 'flex',
            justifyContent: 'center',
@@ -68,11 +68,12 @@ export const FrontsideLearning = (()=>{
                       <LearningImg src=  {process.env.PUBLIC_URL+ "/Img/FangWin.jpg"} alt="læringsbilde"/>
 
                     </div>
-
-                    <LButton style={{gridColumnStart: '3', gridColumnEnd: '3', gridRowStart: 4, gridRowEnd:'4', marginBottom:'2rem', marginTop: '1rem'}}>Se Mer</LButton>
+                    <Link style={{gridColumnStart: '3', gridColumnEnd: '3', gridRowStart: 4, gridRowEnd:'4', marginBottom:'2rem', marginTop: '1rem', textDecoration: 'none', color: 'inherit'}} to='/Learning' >
+                      <LButton >Se Mer</LButton>
+                    </Link>
 
             </FLearningStyle>
         </div>
-        </Link>
+        
     )
 })

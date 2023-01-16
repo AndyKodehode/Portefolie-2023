@@ -87,7 +87,7 @@ line-height: 39px;
 letter-spacing: 0em;
 text-align: left;
 margin-left: 2rem;
-color:  #0A2236;
+color: #0A2236 ;
 margin-top: 2rem;
 @media (min-width: 700px){
   font-size: 82px;
@@ -492,6 +492,9 @@ background-color: transparent;
 color: white;
 border-radius: 5px;
 margin-bottom: 3rem;
+:hover{
+  cursor: pointer;
+}
 
 @media( min-width: 700px){
 
@@ -545,6 +548,126 @@ color:  white;
 
 `
 
+//LÆRINGSSIDE//
+
+export const HeaderLearningImg = styled.div`
+
+position: absolute;
+top: 300px;
+left:20px;
+width: 20rem;
 
 
+@media(min-width: 700px){
+  /* display: none; */
+  left: 800px;
+  top: 800px;
+  width: 30rem;
+}
 
+
+`
+
+export const LearningFlexDiv= styled.div`
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+`
+
+
+export const LImagDiv = styled.div`
+
+@media (min-width: 700px){
+width: 35%;
+
+}
+
+`
+export const LImg = styled.img`
+
+width: 70%;
+margin-left: 3rem;
+/* margin-top: 8rem; */
+
+@media (min-width: 700px){
+  /* width: 55%; */
+  margin-top: 20rem;
+}
+
+
+`
+
+export const LH1 = styled.h1`
+
+font-family: 'Montserrat', sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 39px;
+letter-spacing: 0em;
+text-align: left;
+color:  #0A2236;
+margin-left: 2rem;
+@media (min-width: 700px){
+  font-size: 75px;
+}
+
+
+`
+
+export const BooksImg = styled.div`
+
+display: flex;
+justify-content: center;
+width: 25rem;
+height: 12rem;
+margin-top: 1rem;
+z-index: 1;
+
+
+`
+
+export const BookFlexDiv = styled.div`
+
+height: 30rem;
+margin-top: 7rem;
+position: relative;
+
+
+`
+
+export const BookP = styled.p`
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+width: 45vw;
+margin-left: 1.5rem;
+margin-bottom: 1rem;
+color:  #364D61;
+
+@media(min-width: 700px){
+  width: 20vw;
+  margin-right: 20rem;
+  font-size: 18px;
+}
+
+`
+
+export const BookBox = styled.div`
+
+position: absolute;
+width: 19rem;
+height: 11rem;
+background-color: #70ACE0;
+z-index: 2;
+top: 11rem;
+left: 5rem;
+padding: 1rem;
+margin-bottom: 2rem;
+
+`
