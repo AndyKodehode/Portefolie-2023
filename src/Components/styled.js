@@ -17,6 +17,7 @@ background-color: #70ACE0;
     display: none;
    }
    background-color: white;
+   z-index:1
 }
 
 
@@ -404,6 +405,7 @@ margin-top: 2rem;
 
 
 
+
 `
 
 export const ProgressFrame = styled.div`
@@ -431,9 +433,10 @@ justify-content: center;
 border-radius: 50%;
 width: 4rem;
 height: 4rem;
-border-style: none;
+border-style: solid;
 border-width: 1px;
 border-color: lightblue;
+
 
 @media(min-width: 700px){
 
@@ -582,6 +585,8 @@ export const LImagDiv = styled.div`
 
 @media (min-width: 700px){
 width: 35%;
+height: 100%;
+
 
 }
 
@@ -594,7 +599,9 @@ margin-left: 3rem;
 
 @media (min-width: 700px){
   /* width: 55%; */
-  margin-top: 20rem;
+  margin-top: 2rem;
+  
+
 }
 
 
@@ -626,6 +633,11 @@ height: 12rem;
 margin-top: 1rem;
 z-index: 1;
 
+@media(min-width: 700px){
+  width: 38rem;
+  height: 22rem;
+}
+
 
 `
 
@@ -634,6 +646,9 @@ export const BookFlexDiv = styled.div`
 height: 30rem;
 margin-top: 7rem;
 position: relative;
+display: flex;
+flex-direction: column;
+align-items: center;
 
 
 `
@@ -648,11 +663,11 @@ text-align: left;
 width: 45vw;
 margin-left: 1.5rem;
 margin-bottom: 1rem;
-color:  #364D61;
+color: black;
 
 @media(min-width: 700px){
   width: 20vw;
-  margin-right: 20rem;
+  margin-right: 7rem;
   font-size: 18px;
 }
 
@@ -669,5 +684,99 @@ top: 11rem;
 left: 5rem;
 padding: 1rem;
 margin-bottom: 2rem;
+
+@media (min-width: 700px){
+  width: 22rem;
+  height:12rem;
+  left: 20rem;
+  top:15rem;
+}
+
+`
+
+export const CircleBtn = styled.button`
+
+width: 1.5rem;
+height: 1.5rem;
+border-radius: 50%;
+/* position: absolute; */
+top: 6rem;
+background-color: white;
+border-style: solid;
+border-color: lightgray;
+z-index: 1;
+margin-top: 6rem;
+
+@media (min-width: 700px){
+
+ margin-top: 11.5rem;
+ width: 2.5rem;
+ height: 2.5rem;
+}
+
+`
+
+export const RoundImg = styled.img `
+
+border-radius: 50%;
+object-fit: contain;
+width: 100%;
+height: auto;
+
+
+
+`
+
+export const YoutubeFrame = styled.div`
+
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 100%;
+margin-bottom: 5rem;
+
+@media(min-width: 700px){
+  margin-bottom: 5rem;
+  
+}
+`
+
+export const CircleImgFrame = styled.div`
+
+display: flex;
+width: 50%;
+justify-content: center;
+text-align: left;
+
+@media (min-width: 700px){
+  justify-content: right;
+}
+
+`
+
+export const CarouselFlexDiv = styled.div`
+
+display: flex;
+flex-direction: column;
+width: 100%;
+align-items: center;
+justify-content: center;
+
+
+@media (min-width: 700px){
+  margin-bottom: 5rem;
+  width: 50%;
+}
+
+
+`
+
+export const KursDiv = styled.div`
+
+@media (min-width: 700px{
+
+  margin-bottom: 15rem;
+  margin-top: 10rem;
+})
 
 `
