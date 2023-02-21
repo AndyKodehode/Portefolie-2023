@@ -24,14 +24,15 @@ export const Fontenehus = (()=>{
         
          <LearningFlexDiv>
             <NavStyled  style={{backgroundColor:'#70ACE0'}}>
+             
               <Link to='/AndyKodehode/Portefolie-2023'  style={{textDecoration: 'none', color: 'inherit'}}>
-                  <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Hjem</BookP> 
+                  <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
               </Link>
               <Link to='/Streamingapp'>
-                <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Forrige prosjekt</BookP> 
+                <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
               </Link>
               <Link to='/TipCalculator'>
-                <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Neste prosjekt</BookP> 
+                <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
               </Link>
             </NavStyled>
            
@@ -56,13 +57,13 @@ export const TipCalculator = (()=>{
         <LearningFlexDiv>
         <NavStyled  style={{backgroundColor:'#70ACE0'}}>
           <Link to='/AndyKodehode/Portefolie-2023"'>
-            <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Hjem</BookP> 
+            <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
           </Link>
           <Link to='/Fontenehus'>
-                <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Forrige prosjekt</BookP> 
+                <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
               </Link>
           <Link to='/StreamingApp'>
-            <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Neste prosjekt</BookP> 
+            <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
           </Link>
         </NavStyled>
        
@@ -85,29 +86,29 @@ export const StreamingApp = (()=>{
     return(
          
         <LearningFlexDiv>
-        <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'space-between'}}>
-          <Link to='/AndyKodehode/Portefolie-2023"'>
-            <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Hjem</BookP> 
-          </Link>
-          <Link to='/TipCalculator'>
-                <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Forrige prosjekt</BookP> 
+            <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right'}}>
+                <Link to='/AndyKodehode/Portefolie-2023"'>
+                  <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
+                </Link>
+                <Link to='/TipCalculator'>
+                        <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
+                      </Link>
+                <Link to='/Fontenehus'>
+                <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
               </Link>
-          <Link to='/Fontenehus'>
-            <BookP style={{marginRight:'1rem', textAlign: 'center'}}>Neste prosjekt</BookP> 
-          </Link>
-        </NavStyled>
-       
-        <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
-         
-        <div style={{ display:'flex', flexDirection: 'column'}}>
-                <LH1 style={{color:'white'}}>StreamingApp</LH1>
-                <BookP style={{marginLeft: '2.2rem'}}> Et kreativt prosjekt som jeg gjorde i 2019/20</BookP>
-        </div>
-            <LImagDiv  style={{marginRight:'1.5rem'}}>
-                <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/Streaming-home.jpg"} alt="mobil img" />
-            </LImagDiv>
-        </HeaderTop>
-    </LearningFlexDiv>  
+            </NavStyled>
+          
+            <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
+            
+            <div style={{ display:'flex', flexDirection: 'column'}}>
+                    <LH1 style={{color:'white'}}>StreamingApp</LH1>
+                    <BookP style={{marginLeft: '2.2rem'}}> Et kreativt prosjekt som jeg gjorde i 2019/20</BookP>
+            </div>
+                <LImagDiv  style={{marginRight:'1.5rem'}}>
+                    <LImg style={{width:'70%'}} src={process.env.PUBLIC_URL + "/Img/Streaming-home.jpg"} alt="streaming img" />
+                </LImagDiv>
+            </HeaderTop>
+        </LearningFlexDiv>  
        
     )
 })
