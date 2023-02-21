@@ -433,15 +433,17 @@ justify-content: center;
 border-radius: 50%;
 width: 4rem;
 height: 4rem;
-border-style: solid;
+/* border-style: solid;
 border-width: 1px;
-border-color: lightblue;
+border-color: lightblue; */
 
 
 @media(min-width: 700px){
 
   width: 6rem;
   height: 6rem;
+  border-color: none;
+  border-style: none;
 }
 
 
@@ -724,7 +726,6 @@ width: 100%;
 height: auto;
 
 
-
 `
 
 export const YoutubeFrame = styled.div`
@@ -732,11 +733,16 @@ export const YoutubeFrame = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-width: 100%;
+width: 70%;
 margin-bottom: 5rem;
+justify-content: center;
+margin-left: 5rem;
+
 
 @media(min-width: 700px){
   margin-bottom: 5rem;
+  flex-direction: row;
+  width: 70%;
   
 }
 `
@@ -748,8 +754,38 @@ width: 50%;
 justify-content: center;
 text-align: left;
 
+
+
+`
+
+export const CircleFlexDiv= styled.div`
+
+display: flex;
+flex-direction: row;
+margin-bottom: 2rem;
+width: 70%;
+justify-content: center;
+align-items: center;
+
+@media(min-width: 700px){
+
+  flex-direction: column;
+}
+
+`
+
+export const CircleText= styled.div`
+margin-left: 2rem;
+text-align: left;
+width: 50%;
+:hover{
+  color: lightgray;
+}
+
 @media (min-width: 700px){
-  justify-content: right;
+
+  text-align: center;
+  margin-left: 0rem;
 }
 
 `
@@ -763,6 +799,7 @@ align-items: center;
 justify-content: center;
 
 
+
 @media (min-width: 700px){
   margin-bottom: 5rem;
   width: 50%;
@@ -773,10 +810,46 @@ justify-content: center;
 
 export const KursDiv = styled.div`
 
-@media (min-width: 700px{
+@media (min-width: 700px){
 
   margin-bottom: 15rem;
   margin-top: 10rem;
-})
+}
+
+`
+
+export const BookMain = styled.div`
+
+@media (min-width: 700px){
+
+  margin-top: 20rem;
+}
+
+
+`
+
+export const H2Learn= styled.h2`
+font-family: 'Montserrat', sans-serif;
+font-size: 25px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+color: '#062D4F';
+font-weight: bold;
+
+@media( min-width: 700px){
+  
+  font-size: 36px;
+
+
+}`
+
+export const KursBtn = styled.div`
+
+display: flex;
+align-items: right;
+justify-content: right;
+width: 100%
+
 
 `

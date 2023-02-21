@@ -35,7 +35,7 @@ const backClick =()=>{
 
 return(
 
-<BookFlexDiv style={{display: 'flex', flexDirection:'column', width: '100%'}}> 
+<BookFlexDiv style={{display: 'flex', flexDirection:'column', width: '100%', marginTop: '2rem'}}> 
    
      
      <div   style={{display:'flex', flexDirection: 'row', width: '100%', justifyContent:'center' }} >

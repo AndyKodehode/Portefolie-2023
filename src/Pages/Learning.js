@@ -19,9 +19,17 @@ import { RoundImg } from "../Components/styled"
 import { YoutubeFrame } from "../Components/styled"
 import { CircleImgFrame } from "../Components/styled"
 import { CarouselFlexDiv } from "../Components/styled"
-import { H2 } from "../Components/styled"
+import { H2Learn } from "../Components/styled"
 import { Footer } from "../Components/footer"
 import { KursDiv } from "../Components/styled"
+import { BookMain } from "../Components/styled"
+import { CircleFlexDiv } from "../Components/styled"
+import { CircleText } from "../Components/styled"
+import { LButton } from "../Components/styled"
+import { KursBtn } from "../Components/styled"
+
+import { Link } from "react-router-dom"
+
 
 export const YoutubeImg = [
     {
@@ -74,70 +82,69 @@ export const Learning = (()=>{
            </HeaderTop>
 
 
-
-          <div style={{marginTop:'20rem'}}>
+         <BookMain>
 
               
-          <H2 style={{textAlign: 'center', fontWeight: 'normal'}}>Bøker</H2>
+          <H2Learn style={{textAlign: 'center'}}>Bøker</H2Learn>
 
-          <BookFlexDiv>
+               <BookFlexDiv>
 
-                  
-                <BooksImg>
-                    <img src={process.env.PUBLIC_URL + "/Img/Rocket Surgery.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
-                </BooksImg>
-
-                <BookBox>
-                   <NavP style={{color:'white', marginLeft: '0.5rem'}}>Rocket Surgery</NavP>
-                   <BookP>
-                        En praktisk bok om hvordan man gjør brukertesting, hva man må tenke på i forkant, underveis og hva observatører skal gjøre
-                   </BookP>
                     
-                </BookBox>
-
-            </BookFlexDiv>
-
-            <BookFlexDiv>
-                
-                  
-                    <BooksImg>
-                        <img src={process.env.PUBLIC_URL + "/Img/drittsystem.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
-                    </BooksImg>
-
-                    <BookBox>
-                            <NavP style={{color:'white', marginLeft: '1.2rem', padding: '0.2rem'}}>Jævla Drittsystem</NavP>
-                            <BookP>
-                                En bok om viktigheten av å gjøre grundig jobb i forkant når man skal skape et produkt, og konsekvensene av å ikke gjøre forarbeidet godt nok.
-                           </BookP>
-                        
-                    </BookBox>
-
-            </BookFlexDiv>
-
-            <BookFlexDiv>
-                      
-                            
                         <BooksImg>
-                            <img src={process.env.PUBLIC_URL + "/Img/100 things 2.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
+                            <img src={process.env.PUBLIC_URL + "/Img/Rocket Surgery.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
                         </BooksImg>
 
                         <BookBox>
-                            <NavP style={{color:'white', marginLeft: '0.5rem'}}>100 things</NavP>
-                            <BookP>
-                                    En bok om hvordan mennesker fungerer og hvordan man kan ta hensyn til det i design
+                        <NavP style={{color:'white', marginLeft: '0.5rem'}}>Rocket Surgery</NavP>
+                        <BookP>
+                                En praktisk bok om hvordan man gjør brukertesting, hva man må tenke på i forkant, underveis og hva observatører skal gjøre
+                        </BookP>
+                            
+                        </BookBox>
+
+                </BookFlexDiv>
+
+                <BookFlexDiv>
+                    
+                    
+                        <BooksImg>
+                            <img src={process.env.PUBLIC_URL + "/Img/drittsystem.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
+                        </BooksImg>
+
+                        <BookBox>
+                                <NavP style={{color:'white', marginLeft: '1.2rem', padding: '0.2rem'}}>Jævla Drittsystem</NavP>
+                                <BookP>
+                                    En bok om viktigheten av å gjøre grundig jobb i forkant når man skal skape et produkt, og konsekvensene av å ikke gjøre forarbeidet godt nok.
                             </BookP>
                             
                         </BookBox>
 
-            </BookFlexDiv>
+                </BookFlexDiv>
 
-            </div>
+                <BookFlexDiv>
+                        
+                                
+                            <BooksImg>
+                                <img src={process.env.PUBLIC_URL + "/Img/100 things 2.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
+                            </BooksImg>
+
+                            <BookBox>
+                                <NavP style={{color:'white', marginLeft: '0.5rem'}}>100 things</NavP>
+                                <BookP>
+                                        En bok om hvordan mennesker fungerer og hvordan man kan ta hensyn til det i design
+                                </BookP>
+                                
+                            </BookBox>
+
+                </BookFlexDiv>
+
+            </BookMain>
 
       
            <KursDiv>
 
-                    <H2 style={{textAlign: 'center',  fontWeight: 'normal'}}>Kurs</H2>
-                    <BookFlexDiv>
+                    <H2Learn style={{textAlign: 'center'}}>Kurs</H2Learn>
+                    <BookFlexDiv style={{marginTop:'2rem'}}>
 
                             <NavP>IDF</NavP>
 
@@ -146,10 +153,15 @@ export const Learning = (()=>{
                             </BooksImg>
                                 
                                 <div>
-                                <BookP style={{color:'#0A2236'}}>
-                                    Teoretisk kurs på nett i design-thinking, hvordan gå frem for å løse problemer.
-                                </BookP>
-                            </div>
+                                    <BookP style={{color:'#0A2236'}}>
+                                        Teoretisk kurs på nett i design-thinking, hvordan gå frem for å løse problemer.
+                                    </BookP>
+                               </div>
+
+                            <KursBtn>
+                                  <LButton style={{borderColor:'#DDDBDB', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</LButton>
+                            </KursBtn>
+                       
 
                     </BookFlexDiv>
                 
@@ -172,7 +184,16 @@ export const Learning = (()=>{
                             <BookP style={{color:'#0A2236'}}>
                                 Kurs i HTML, CSS, Javascript, Figma og React.
                             </BookP>
+
                             
+                          
+                            <KursBtn>
+                                  <Link to='/KhAttest'>
+                                    <LButton style={{borderColor:'#DDDBDB', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</LButton>
+                                 </Link>
+                            </KursBtn>
+                             
+                           
                     
 
                     </BookFlexDiv>
@@ -180,21 +201,21 @@ export const Learning = (()=>{
             </KursDiv>
             
              <CarouselFlexDiv>
-                <H2 style={{ fontWeight: 'normal'}}>Skillshare&Domestika</H2>
+                <H2Learn >Skillshare&Domestika</H2Learn>
                 <Carousel/>
              </CarouselFlexDiv> 
         
            
 
 
-
+        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '2rem'}}>
+                     <H2Learn>Youtube </H2Learn> 
+                    <h3>Personer jeg følger</h3>
+        </div>
 
           <YoutubeFrame>
 
-                <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '2rem'}}>
-                    <h1>Youtube</h1>
-                    <h3>Personer jeg følger</h3>
-                </div>
+               
 
            {YoutubeImg.map((tube)=>{
 
@@ -202,22 +223,25 @@ export const Learning = (()=>{
 
                 
            
-                    <div key={tube.id} style={{display:'flex', flexDirection: 'column', alignItems:'center', width:'60%'}}>
+                    <div key={tube.id} style={{display:'flex', flexDirection: 'row', alignItems:'center', width:'100%'}}>
 
-                        <div style={{display:'flex', flexDirection:'row', marginBottom: '2rem', width: '100%', justifyContent: 'center', alignItems:'center'}}> 
+                         
 
-                        
+                        <CircleFlexDiv>
                            <CircleImgFrame>
                                     <CircleImg >
-                                    <a style={{textDecoration:'none'}} href={tube.link}><RoundImg src= {tube.image}/></a> 
+                                      <a style={{textDecoration:'none'}} href={tube.link}><RoundImg src= {tube.image}/></a> 
                                     </CircleImg>
                            </CircleImgFrame>
 
-                            <div style={{marginLeft: '2rem', textAlign: 'left', width: '50%'}}>
-                             <a style={{textDecoration:'none'}} href={tube.link}> <p >{tube.text}</p> </a> 
-                            </div>
+                             <CircleText>
+                               <a style={{textDecoration:'none', color:'inherit'}} href={tube.link}> <p >{tube.text}</p> </a> 
+                             </CircleText>
 
-                       </div>
+
+                        </CircleFlexDiv>
+
+                      
                     </div>
                   
                 
@@ -245,3 +269,7 @@ export const Learning = (()=>{
 
 
           
+
+// <div style={{display:'flex', flexDirection:'row', marginBottom: '2rem', width: '100%', justifyContent: 'center', alignItems:'center'}}></div>
+
+
