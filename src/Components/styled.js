@@ -853,3 +853,63 @@ width: 100%
 
 
 `
+
+
+export const ProjectDiv = styled.div`
+
+height: 30rem;
+width: 100%;
+margin-top: 7rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 2rem;
+
+
+@media( min-width: 700px){
+
+  margin-top: 35rem;
+}
+
+`
+
+export const ProjectImg = styled.img`
+
+width: 100%;
+
+@media (min-width: 700px){
+
+  margin-top: 2rem;
+  
+}
+
+
+`
+
+export const ProjectAbImgOne= styled.img`
+
+width: 30rem;
+position: absolute;
+
+@media (min-width: 700px){
+
+  margin-top: 2rem;
+  
+}
+
+
+`
+
+export const ProjectAbImgTwo= styled.img`
+
+width: 30rem;
+position: absolute;
+
+@media (min-width: 700px){
+
+  margin-top: 2rem;
+  
+}
+
+
+`
