@@ -15,8 +15,8 @@ function App() {
       
       
       <Routes>
-        <Route path="/" element={<Firstpage />} /> 
-        <Route path="About" element={<About />} />
+        <Route path="/" element={<Firstpage/>} /> 
+        <Route path="About" element={<About/>} />
         <Route path="Fontenehus" element={<Fontenehus/>} />
         <Route path="TipCalculator" element={<TipCalculator/>} />
         <Route path="StreamingApp" element={<StreamingApp/>} />

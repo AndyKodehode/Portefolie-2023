@@ -83,7 +83,7 @@ export const Fontenehus = (()=>{
          <LearningFlexDiv>
             <NavStyled  style={{backgroundColor:'#70ACE0'}}>
              
-              <Link to='/AndyKodehode/Portefolie-2023'  style={{textDecoration: 'none', color: 'inherit'}}>
+              <Link to='/'  style={{textDecoration: 'none', color: 'inherit'}}>
                   <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
               </Link>
               <Link to='/Streamingapp'>
@@ -160,7 +160,7 @@ export const TipCalculator = (()=>{
 
         <LearningFlexDiv>
         <NavStyled  style={{backgroundColor:'#70ACE0'}}>
-          <Link to='/AndyKodehode/Portefolie-2023'>
+          <Link to='/'>
             <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
           </Link>
           <Link to='/Fontenehus'>
@@ -230,7 +230,7 @@ export const StreamingApp = (()=>{
          
         <LearningFlexDiv>
             <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right'}}>
-                <Link to='/AndyKodehode/Portefolie-2023'>
+                <Link to='/'>
                   <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
                 </Link>
                 <Link to='/TipCalculator'>
