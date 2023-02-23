@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/AndyKodehode/Portefolie-2023/static/css/main.754ebb54.css",
-    "main.js": "/AndyKodehode/Portefolie-2023/static/js/main.de1bc6eb.js",
-    "static/js/787.34099e4b.chunk.js": "/AndyKodehode/Portefolie-2023/static/js/787.34099e4b.chunk.js",
-    "index.html": "/AndyKodehode/Portefolie-2023/index.html",
-    "main.754ebb54.css.map": "/AndyKodehode/Portefolie-2023/static/css/main.754ebb54.css.map",
-    "main.de1bc6eb.js.map": "/AndyKodehode/Portefolie-2023/static/js/main.de1bc6eb.js.map",
-    "787.34099e4b.chunk.js.map": "/AndyKodehode/Portefolie-2023/static/js/787.34099e4b.chunk.js.map"
+    "main.css": "/Portefolie-2023/static/css/main.754ebb54.css",
+    "main.js": "/Portefolie-2023/static/js/main.091cf211.js",
+    "static/js/787.34099e4b.chunk.js": "/Portefolie-2023/static/js/787.34099e4b.chunk.js",
+    "index.html": "/Portefolie-2023/index.html",
+    "main.754ebb54.css.map": "/Portefolie-2023/static/css/main.754ebb54.css.map",
+    "main.091cf211.js.map": "/Portefolie-2023/static/js/main.091cf211.js.map",
+    "787.34099e4b.chunk.js.map": "/Portefolie-2023/static/js/787.34099e4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.754ebb54.css",
-    "static/js/main.de1bc6eb.js"
+    "static/js/main.091cf211.js"
   ]
 }
