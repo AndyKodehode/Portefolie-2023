@@ -15,7 +15,7 @@ function App() {
       
       
       <Routes>
-        <Route path="/AndyKodehode/Portefolie-2023" element={<Firstpage />} /> 
+        <Route path="/" element={<Firstpage />} /> 
         <Route path="About" element={<About />} />
         <Route path="Fontenehus" element={<Fontenehus/>} />
         <Route path="TipCalculator" element={<TipCalculator/>} />
