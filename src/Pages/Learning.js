@@ -43,7 +43,7 @@ export const YoutubeImg = [
   ,
     {
         id: 21,
-        image: process.env.PUBLIC_URL+'/Img/satori.jpg',
+        image: process.env.PUBLIC_URL+'/Img/Satori.jpg',
         text: 'Satori graphics',
         link: 'https://www.youtube.com/@SatoriGraphics'
     },
@@ -57,7 +57,7 @@ export const YoutubeImg = [
 
     {
         id: 23,
-        image: process.env.PUBLIC_URL+'/Img/Figma.jpg',
+        image: process.env.PUBLIC_URL+'/Img/Flgma.jpg',
         text: 'Figma', 
         link:'https://www.youtube.com/@Figma'
         

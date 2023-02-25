@@ -178,7 +178,7 @@ export const TipCalculator = (()=>{
                 <BookP style={{marginLeft: '2.2rem'}}> Et FrontEnd mentor prosjekt som jeg kodet i Javascript</BookP>
         </div>
             <LImagDiv  style={{marginRight:'1.5rem'}}>
-                <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/tipCalculator.jpg"} alt="mobil img" />
+                <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/TipCalculator.jpg"} alt="mobil img" />
             </LImagDiv>
         </HeaderTop>
 
@@ -248,7 +248,7 @@ export const StreamingApp = (()=>{
                     <BookP style={{marginLeft: '2.2rem'}}> Et kreativt prosjekt som jeg gjorde i 2019/20</BookP>
             </div>
                 <LImagDiv  style={{marginRight:'1.5rem'}}>
-                    <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/Streaming-home.jpg"} alt="streaming img" />
+                    <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/streaming-home.jpg"} alt="streaming img" />
                 </LImagDiv>
             </HeaderTop>
 
