@@ -34,7 +34,7 @@ import { Link } from "react-router-dom"
 export const YoutubeImg = [
     {
        id: 20,
-       image:  process.env.PUBLIC_URL+'/Img/flux.jpg',
+       image:  process.env.PUBLIC_URL+'/Img/Flux.jpg',
        text: 'Flux academy',
        link: 'https://www.youtube.com/@FluxAcademy'
        
@@ -57,7 +57,7 @@ export const YoutubeImg = [
 
     {
         id: 23,
-        image: process.env.PUBLIC_URL+'/Img/Flgma.jpg',
+        image: process.env.PUBLIC_URL+'/Img/Figma.jpg',
         text: 'Figma', 
         link:'https://www.youtube.com/@Figma'
         
