@@ -3,7 +3,7 @@ import { HeaderTop } from "./styled"
 import { H1 } from "./styled"
 import { H2Lora } from "./styled" 
 import { HeaderP } from "./styled"
-import { Nav } from "./Nav"
+import { MainNav } from "./Nav"
 import { HeaderImgDiv} from "./styled"
 import { BlueBox } from "./styled"
 import { BotomHeaderDiv } from "./styled"
@@ -15,7 +15,7 @@ export const Header = (()=>{
 
     return(
         <HeaderFrame>
-               <Nav></Nav>
+               <MainNav></MainNav>
            
            <HeaderTop>
            

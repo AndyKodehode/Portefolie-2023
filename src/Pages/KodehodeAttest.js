@@ -1,6 +1,5 @@
-
-
-// import Anders_Sluttattest from '../Pages/Anders_Sluttattest-2.pdf'
+import { MainNav } from "../Components/Nav"
+import { AttestImg } from "../Components/styled"
 
 
 
@@ -8,18 +7,21 @@
 
 export const KodeHodeAttest= (()=>{
 
-    // return(
+    const Style ={
+        backgroundColor: 'white'
+    }
+
+    return(
+     
+        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center'}} >
+            <MainNav style={Style}/>
+            <AttestImg src= {process.env.PUBLIC_URL + "/Img/Anders_Sluttattest-3.png"} alt='sluttattest'></AttestImg>
+            
+        </div>
+
+    )
           
-    //   //  <PDFViewer   width= '100%' height='200rem'>
-    //   //    <Document >
-    //   //       <Page size="A4" >
-    //   //           <View >
-    //   //           <img src='Satori.jpg' alt='img test'></img>
-    //   //           </View>
-    //   //       </Page>
-    //   //    </Document>
-    //   //  </PDFViewer>
-    // )
+
 })
 
 

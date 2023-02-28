@@ -10,12 +10,14 @@ import { ProjectDiv } from "../Components/styled"
 import { ProjectImg } from "../Components/styled"
 import { H2 } from "../Components/styled"
 import { Footer } from "../Components/footer"
+import { ProjectH2 } from "../Components/styled"
+import { ProjectImgDiv } from "../Components/styled"
+import { ProjectNavText } from "../Components/styled"
+// import { Carousel } from "../Components/carousel"
 
 
-const ProjectData =[
-  {
-    id: 40,
-    Fontenehus:[
+const ProjectDataOne =[
+
         {
           id: 45,
           header:'Ide og prosess',
@@ -53,20 +55,67 @@ const ProjectData =[
         }
       
       
-      ],
+      ]
 
-
+const ProjectDataTwo =
   
-        TipCalculator:[
+        [
             {
               id: 51,
               header:'Ide og prosess',
               tekst:'Jeg begynte med å gjøre brukerundersøkelse for å finne ut av hva medlemmene på huset trenger for å bli motiverte og ha bra arbeidsdager',
               bilde: process.env.PUBLIC_URL + "/Img/Brukerundersøkelse.png"
-            }]
-  }]
+            }
+          
+          ]
 
 
+const ProjectDataThree =      [
+
+  {
+    id: 65,
+    header:'Ide og prosess',
+    tekst:'Jeg begynte med å gjøre brukerundersøkelse for å finne ut av hva medlemmene på huset trenger for å bli motiverte og ha bra arbeidsdager',
+    bilde: process.env.PUBLIC_URL + "/Img/skisse 3.jpg"
+  },
+
+
+  {
+    id: 66,
+    header: 'Wireframes',
+    tekst: 'hei hei, hallo',
+    bilde: process.env.PUBLIC_URL + "/Img/wireframe.png"
+
+  },
+  {
+    id: 67,
+    header: 'Design',
+    tekst: 'Here is a text',
+    bilde: process.env.PUBLIC_URL + "/Img/Colloseum Friends.jpg"
+  }, 
+
+  {
+    id: 68,
+    header: 'Prototype',
+    tekst: 'text text text',
+    bilde: process.env.PUBLIC_URL + "/Img/prototype.png"
+  }
+
+]
+
+
+// const ProjectCarousel = [
+//   {
+//     id: 61,
+//     img: process.env.PUBLIC_URL + "/Img/Idemyldring 1.JPG",
+//     text: ''
+//   },
+//   {
+//     id: 62,
+//     img:process.env.PUBLIC_URL + "/Img/Idemyldring 2.JPG",
+//     text: ''
+//   }
+// ]
 
 export const Fontenehus = (()=>{
 
@@ -78,20 +127,54 @@ export const Fontenehus = (()=>{
   //   let test = [Fontenehus, TipCalculator, StreamingApp]
   //   setProject(test+1)
   // }
+
+
+  const FontenehusData= ProjectDataOne.map(app =>
+    
+
+      
+  
+    <div key={app.id} style={{marginBottom: '10rem'}} >
+        <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
+        <ProjectImg src={app.bilde}/>
+       <p style={{width:'50%'}}>{app.tekst}</p>
+    </div>
+
+  )
+
+  // const PCdata = ProjectCarousel.map(data =>
+    
+
+      
+  
+  //   <div key={data.id} >
+  //     <img src={data.img} alt='mapped img'></img>
+  //   </div>
+
+  // )
+
+
+
     return(
-        
+        <div>
          <LearningFlexDiv>
             <NavStyled  style={{backgroundColor:'#70ACE0'}}>
-             
-              <Link to='/'  style={{textDecoration: 'none', color: 'inherit'}}>
-                  <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
-              </Link>
-              <Link to='/Streamingapp'>
-                <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
-              </Link>
-              <Link to='/TipCalculator'>
-                <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
-              </Link>
+              <ProjectNavText>
+                  <div>
+                      <Link to='/'  style={{textDecoration: 'none', color: 'inherit'}}>
+                          <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
+                      </Link>
+                  </div>
+
+                  <div style={{display:'flex', flexDirection:'row'}}>
+                      <Link to='/Streamingapp'>
+                        <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
+                      </Link>
+                      <Link to='/TipCalculator'>
+                        <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
+                      </Link>
+                  </div>
+              </ProjectNavText>
             </NavStyled>
            
             <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
@@ -105,70 +188,65 @@ export const Fontenehus = (()=>{
                 </LImagDiv>
             </HeaderTop>
 
-           <div style={{display:'flex'}}>
-           {ProjectData.map((app)=>{
-                return(
+            <ProjectDiv>
+
+              <ProjectImgDiv>
+                {FontenehusData}
+              </ProjectImgDiv>
+
+             
+              <Footer />
+    
+             </ProjectDiv>
+            
+       
          
-              <ProjectDiv key={`Home-${app.Fontenehus.id}`}>
-                
-                <div key={app.Fontenehus.id} style={{width:'50%'}}>
-                  <H2 >{app.header}</H2>
-                  <ProjectImg src={app.bilde}/>
-                  <p style={{width:'50%'}}>{app.tekst}</p>
-                </div>
-
-                <div key={app.Fontenehus.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[1].header}</H2>
-                  <ProjectImg src={app.Fontenehus[1].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[1].tekst}</p>
-                </div>
-
-                <div key={app.Fontenehus.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[2].header}</H2>
-                  <ProjectImg src={app.Fontenehus[2].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[2].tekst}</p>
-                </div>
-
-                <div key={app.Fontenehus.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[3].header}</H2>
-                  <ProjectImg src={app.Fontenehus[3].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[3].tekst}</p>
-                </div>
-
-                <div key={app.Fontenehus.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[4].header}</H2>
-                  <ProjectImg src={app.Fontenehus[4].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[4].tekst}</p>
-                </div> 
-
-              </ProjectDiv>
-            
-            
-            )
-            
-          })}
-          </div>
-         <Footer/>
-
+       
+       
         </LearningFlexDiv>  
+
+         
+
+        </div>
     )
 })
 
 
 export const TipCalculator = (()=>{
+
+  const CalculatorData = ProjectDataTwo.map( app =>
+    
+
+    <div key={app.id} style={{marginBottom: '10rem'}} >
+        <H2>{app.header}</H2>
+        <ProjectImg src={app.bilde}/>
+        <p style={{width:'50%'}}>{app.tekst}</p>
+    </div>
+    
+    )
+
+
     return(
 
         <LearningFlexDiv>
         <NavStyled  style={{backgroundColor:'#70ACE0'}}>
-          <Link to='/'>
-            <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
-          </Link>
-          <Link to='/Fontenehus'>
-                <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
-              </Link>
-          <Link to='/StreamingApp'>
-            <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
-          </Link>
+
+          <ProjectNavText>
+              <div>
+                <Link to='/'>
+                  <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
+                </Link>
+              </div>
+
+              <div style={{display:'flex', flexDirection:'row'}}>
+                <Link to='/Fontenehus'>
+                      <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
+                    </Link>
+                <Link to='/StreamingApp'>
+                  <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
+                </Link>
+              </div>
+          </ProjectNavText>
         </NavStyled>
        
         <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
@@ -182,42 +260,9 @@ export const TipCalculator = (()=>{
             </LImagDiv>
         </HeaderTop>
 
-        
-        {ProjectData.map((app)=>{
-                return(
-         
-              <ProjectDiv>
-                
-                <div key={app.id} style={{width:'50%'}}>
-                  <H2>{app.Fontenehus[0].header}</H2>
-                  <ProjectImg src={app.Fontenehus[0].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[0].tekst}</p>
-                </div>
-
-                <div key={app.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[1].header}</H2>
-                  <ProjectImg src={app.Fontenehus[1].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[1].tekst}</p>
-                </div>
-
-                <div key={app.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[2].header}</H2>
-                  <ProjectImg src={app.Fontenehus[2].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[2].tekst}</p>
-                </div>
-
-                <div key={app.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[3].header}</H2>
-                  <ProjectImg src={app.Fontenehus[3].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[3].tekst}</p>
-                </div>
-
-              </ProjectDiv>
-            
-            
-            )
-            
-          })}
+        <div style={{width:'50%', marginTop:'10rem'}}>
+          {CalculatorData}
+        </div>
 
      
     </LearningFlexDiv>  
@@ -226,6 +271,19 @@ export const TipCalculator = (()=>{
 
 
 export const StreamingApp = (()=>{
+
+  const StreamingData= ProjectDataThree.map(app =>
+    
+
+    <div key={app.id} style={{marginBottom: '10rem'}} >
+        <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
+        <ProjectImg src={app.bilde}/>
+       <p style={{width:'50%'}}>{app.tekst}</p>
+    </div>
+
+  )
+
+
     return(
          
         <LearningFlexDiv>
@@ -252,44 +310,10 @@ export const StreamingApp = (()=>{
                 </LImagDiv>
             </HeaderTop>
 
-            
-           {ProjectData.map((app)=>{
-                return(
          
-              <ProjectDiv>
-                
-                <div key={app.id} style={{width:'50%'}}>
-                  <H2>{app.Fontenehus[0].header}</H2>
-                  <ProjectImg src={app.Fontenehus[0].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[0].tekst}</p>
-                </div>
-
-                <div key={app.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[1].header}</H2>
-                  <ProjectImg src={app.Fontenehus[1].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[1].tekst}</p>
-                </div>
-
-                <div key={app.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[2].header}</H2>
-                  <ProjectImg src={app.Fontenehus[2].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[2].tekst}</p>
-                </div>
-
-                <div key={app.id} style={{width:'50%', marginTop:'10rem'}}>
-                  <H2>{app.Fontenehus[3].header}</H2>
-                  <ProjectImg src={app.Fontenehus[3].bilde}/>
-                  <p style={{width:'50%'}}>{app.Fontenehus[3].tekst}</p>
-                </div>
-
-              </ProjectDiv>
-            
-            
-            )
-            
-          })}
-
-
+            <div style={{width:'50%', marginTop:'10rem'}}>
+              {StreamingData}
+            </div>
            
         </LearningFlexDiv>  
         

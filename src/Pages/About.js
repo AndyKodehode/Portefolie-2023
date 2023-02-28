@@ -1,9 +1,9 @@
-import { Nav } from "../Components/Nav"
+import { MainNav } from "../Components/Nav"
 
 
 export const About =(() =>{
 
     return(
-        <Nav></Nav>
+        <MainNav></MainNav>
     )
 })

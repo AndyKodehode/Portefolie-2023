@@ -159,7 +159,9 @@ export const Learning = (()=>{
                                </div>
 
                             <KursBtn>
+                                <Link to='/IDFkurs'>
                                   <LButton style={{borderColor:'#DDDBDB', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</LButton>
+                                </Link>
                             </KursBtn>
                        
 

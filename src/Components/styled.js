@@ -17,7 +17,9 @@ background-color: #70ACE0;
     display: none;
    }
    background-color: white;
-   z-index:1
+   z-index:0;
+   color: black
+
 }
 
 
@@ -43,6 +45,8 @@ display:none;
   flex-direction: row;
   margin-bottom: 2rem;
   margin-right: 4rem;
+  justify-content:space-between;
+  width: 100%;
 
 }
 
@@ -911,5 +915,63 @@ position: absolute;
   
 }
 
+
+`
+
+export const ProjectH2= styled.h2`
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+color: '#062D4F';
+
+@media( min-width: 700px){
+  
+  font-size: 30px;
+
+
+}
+
+
+
+
+`
+
+export const ProjectImgDiv = styled.div`
+
+width: 70%;
+margin-top: 10rem;
+margin-bottom: 5rem;
+
+@media( min-width: 700px){
+  
+width: 50%;
+
+
+}
+`
+
+export const ProjectNavText = styled.div`
+
+  display: flex; 
+  flex-direction: row;
+  margin-bottom: 2rem;
+  margin-right: 4rem;
+  justify-content:space-between;
+  width: 100%;
+`
+
+
+export const AttestImg = styled.img`
+
+width:100%;
+height:100%;
+margin-top:10rem ;
+
+@media (min-width: 700px){
+  width: 70%;
+  height: 70%;
+}
 
 `
