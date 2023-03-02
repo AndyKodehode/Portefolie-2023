@@ -65,6 +65,53 @@ export const YoutubeImg = [
 
 ]
 
+export const RoundImgCont=(()=>{
+
+
+   return(
+
+     <YoutubeFrame>
+
+    {YoutubeImg.map((tube)=>{
+
+     return(
+
+         
+    
+             <div key={tube.id} style={{display:'flex', flexDirection: 'row', alignItems:'center', width:'100%'}}>
+
+                  
+
+                 <CircleFlexDiv>
+                    <CircleImgFrame>
+                             <CircleImg >
+                               <a style={{textDecoration:'none'}} href={tube.link}><RoundImg  src= {(tube.image)}/></a> 
+                             </CircleImg>
+                    </CircleImgFrame>
+
+                      <CircleText>
+                        <a style={{textDecoration:'none', color:'inherit'}} href={tube.link}> <p >{tube.text}</p> </a> 
+                      </CircleText>
+
+
+                 </CircleFlexDiv>
+
+               
+             </div>
+           
+         
+    
+           
+     )})}
+
+
+  </YoutubeFrame>
+   
+   )
+
+})
+
+
 export const Learning = (()=>{
 
     return(
@@ -210,50 +257,16 @@ export const Learning = (()=>{
            
 
 
-        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '2rem'}}>
+        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '3rem'}}>
                      <H2Learn>Youtube </H2Learn> 
                     <h3>Personer jeg følger</h3>
         </div>
 
-          <YoutubeFrame>
+        <div style={{width: '100%', display:'flex', alignItems: 'center', justifyContent: 'center'}}>{RoundImgCont()}</div>
 
-               
-
-           {YoutubeImg.map((tube)=>{
-
-            return(
-
+         
                 
            
-                    <div key={tube.id} style={{display:'flex', flexDirection: 'row', alignItems:'center', width:'100%'}}>
-
-                         
-
-                        <CircleFlexDiv>
-                           <CircleImgFrame>
-                                    <CircleImg >
-                                      <a style={{textDecoration:'none'}} href={tube.link}><RoundImg src= {tube.image}/></a> 
-                                    </CircleImg>
-                           </CircleImgFrame>
-
-                             <CircleText>
-                               <a style={{textDecoration:'none', color:'inherit'}} href={tube.link}> <p >{tube.text}</p> </a> 
-                             </CircleText>
-
-
-                        </CircleFlexDiv>
-
-                      
-                    </div>
-                  
-                
-           
-                  
-            )})}
-
-        </YoutubeFrame>
-                
-              
             
                 
            

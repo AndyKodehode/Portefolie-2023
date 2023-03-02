@@ -975,3 +975,15 @@ margin-top:10rem ;
 }
 
 `
+
+export const AboutDiv = styled.div`
+
+display: flex;
+flex-direction: column;
+
+@media (min-width:700px){
+  flex-direction: row;
+}
+
+
+`
