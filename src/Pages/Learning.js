@@ -1,6 +1,6 @@
 
 import { HeaderTop } from "../Components/styled"
-import { NavTwo } from "../Components/Nav"
+import { MainNav } from "../Components/Nav"
 // import { H1 } from "../Components/styled"
 // import { H2 } from "../Components/styled"
 // import { HeaderImgDiv } from "../Components/styled"
@@ -114,10 +114,14 @@ export const RoundImgCont=(()=>{
 
 export const Learning = (()=>{
 
+    const LearningStyle = {
+        
+        backgroundColor: '#70ACE0'}
+
     return(
      
         <LearningFlexDiv>
-           <NavTwo ></NavTwo>
+           <MainNav style={LearningStyle}></MainNav>
            <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
               <div style={{ display:'flex', flexDirection: 'column'}}>
                     <LH1 style={{color:'white'}}>Læring</LH1>

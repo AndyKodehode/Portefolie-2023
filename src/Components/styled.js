@@ -6,11 +6,13 @@ import styled from "styled-components"
 
 export const NavStyled= styled.nav`
 width: 100%;
-height: 2rem;
+height: 3rem;
 display: flex;
 flex-direction: row;
 justify-content: right;
 background-color: #70ACE0;
+/* clip-path: circle(25px at calc(100%-45px) 45px);
+transition: 5s ease-in-out; */
 
 @media (min-width: 700px){
   img{
@@ -35,6 +37,7 @@ letter-spacing: 0em;
 text-align: left;
 color:  #364D61;
 padding: 1rem;
+z-index: 2;
 
 `
 
@@ -979,11 +982,83 @@ margin-top:10rem ;
 export const AboutDiv = styled.div`
 
 display: flex;
-flex-direction: column;
+flex-direction: column-reverse;
+align-items: center;
+justify-content: center;
 
 @media (min-width:700px){
   flex-direction: row;
+  margin-top: 10rem;
 }
 
+
+`
+
+
+export const NavHover = styled.div`
+
+width: 100%;
+height: 5rem;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 1rem;
+z-index: 1;
+:hover{
+  background-color: #70ACE0;
+  /* opacity: 0.5; */
+  cursor: pointer;
+  color: white;
+}
+
+
+`
+
+export const AboutImg = styled.div`
+
+width: 70%;
+display: flex;
+justify-content: center;
+margin-bottom: 4rem;
+
+@media (min-width: 700px){
+  width: 50%;
+}
+
+
+`
+
+export const AboutTextDiv = styled.div`
+
+width: 50%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+
+
+/* @media (min-width:700px){
+margin-top: 10rem
+} */
+
+`
+
+export const AboutP = styled.p`
+//styleName: Portefolie/Montserrat/mobil/p;
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 2rem;
+width: 50vw;
+margin-left: 1.5rem;
+color:  #364D61;
+
+@media(min-width: 700px){
+  width: 30vw;
+  font-size: 16px;
+}
 
 `
