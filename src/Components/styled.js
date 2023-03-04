@@ -1062,3 +1062,16 @@ color:  #364D61;
 }
 
 `
+
+
+export const StreamingDiv= styled.div`
+width: 70%;
+margin-top: 5rem;
+
+@media(min-width: 700px){
+  width: 50%;
+  margin-top: 30rem;
+}
+
+
+`

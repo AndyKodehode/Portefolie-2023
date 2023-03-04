@@ -13,6 +13,7 @@ import { Footer } from "../Components/footer"
 import { ProjectH2 } from "../Components/styled"
 import { ProjectImgDiv } from "../Components/styled"
 import { ProjectNavText } from "../Components/styled"
+import { StreamingDiv } from "../Components/styled"
 // import { Carousel } from "../Components/carousel"
 
 
@@ -21,7 +22,7 @@ const ProjectDataOne =[
         {
           id: 45,
           header:'Ide og prosess',
-          tekst:'Jeg begynte med å gjøre brukerundersøkelse for å finne ut av hva medlemmene på huset trenger for å bli motiverte og ha bra arbeidsdager',
+          tekst:'Jeg begynte med å gjøre brukerundersøkelse for å finne ut av hva medlemmene på huset trenger for å bli motiverte og ha bra arbeidsdager.Utgangspunktet var en problemstilling.Hva kan vi gjøre med en app for at de som sitter hjemme kan bli motivert for å komme på huset. Vi gjorde så en idemyldring hvor vi tok utgangspunkt i svarene fra brukerundersøkelsen, hvordan kan vi løse at noen trenger mer trygghet eller mer struktur for å trives.Etter dette så designet jeg en wireframe Figma og sendt ut brukertest gjennom Maze for se hva som funket og ikke.',
           bilde: process.env.PUBLIC_URL + "/Img/Brukerundersøkelse.png"
         },
 
@@ -29,28 +30,28 @@ const ProjectDataOne =[
         {
           id: 46,
           header: 'Design',
-          tekst: 'hei hei, hallo',
+          tekst: ' Ut ifra svarene jeg hadde fått ville jeg lage et design hvor brukeren kunne navigere seg gjennom informasjon fra og om huset enkelt. Oppgaver fra enheter, møter og annen informasjon skal kunne være lett tilgjengelig på appen.',
           bilde: process.env.PUBLIC_URL + "/Img/Fontenehuset Figma.png"
 
         },
         {
           id: 47,
           header: 'React Native',
-          tekst: 'Here is a text',
+          tekst: 'Appen er laget i React Native som bruker både HTML, CSS og Javascript. I tillegg er det en del React spesifikke funksjoner som StackNavigation og UseState som man må lære seg. ',
           bilde: process.env.PUBLIC_URL + "/Img/React Native- Fontenehuset.png"
         }, 
 
         {
           id: 48,
           header: 'ReDesign',
-          tekst: 'text text text',
+          tekst: 'Jeg syns det første designet ble litt tett og hadde lite luft. Jeg tok bort det øverste bildet og gjorde karusellen større, med kun et bilde synlig av gangen. For at folk skal skjønne at de kan bla vil jeg legge sirkler under bildet. I tillegg var første design-filen litt rotete, så jeg ville lage et oppsett med components, farger og skriftstiler for å ha et mer profesjonelt designsystem.',
           bilde: process.env.PUBLIC_URL + "/Img/Fontenehuset Figma redesign.png"
         },
 
         {
           id: 49,
           header: 'Gjenstående',
-          tekst: 'text text text',
+          tekst: ' Den neste delen av prosessen blir å finne en måte å lagre data på, og et CMS verktøy for å skape innhold. Fremover vil jeg samarbeide med noen andre designere og programmere for å få det ferdig.',
           bilde: process.env.PUBLIC_URL + "/Img/Fontenehuset Figma redesign.png"
         }
       
@@ -75,7 +76,7 @@ const ProjectDataThree =      [
   {
     id: 65,
     header:'Ide og prosess',
-    tekst:'Jeg begynte med å gjøre brukerundersøkelse for å finne ut av hva medlemmene på huset trenger for å bli motiverte og ha bra arbeidsdager',
+    tekst:'Dette er et designprosjekt jeg har gjort sammen med min bror i 2020. Vi fikk en ide om en problemstilling som vi syns var gøy jobbe frem en løsning på. Hva om vi kunne lage en plattform som samlet alle streaming-tjenester på et sted?. En tjeneste som gjør det lettere å finne og lagre det du liker.Deretter kom ideen om å gjøre det til en sosial plattform hvor man kan dele og snakke sammen om filmer/serier, se andre sine lister og favoritter. Det var også en måte å lære meg XD på, i senere tid har jeg brukt mer Figma.',
     bilde: process.env.PUBLIC_URL + "/Img/skisse 3.jpg"
   },
 
@@ -83,21 +84,21 @@ const ProjectDataThree =      [
   {
     id: 66,
     header: 'Wireframes',
-    tekst: 'hei hei, hallo',
+    tekst: 'Vi lagde skisser i XD for å lage en oversikt, et bilde av hvordan vi ville ha det uten å bli for opphengt i detaljer. Det ble hentet mye inspiriasjon fra andre plattformer, hvordan ser Netlix, Amazon og HBO ut, hva har de til felles, hva liker vi og liker vi ikke.',
     bilde: process.env.PUBLIC_URL + "/Img/wireframe.png"
 
   },
   {
     id: 67,
     header: 'Design',
-    tekst: 'Here is a text',
+    tekst: 'Brukeren skal kunne navigere seg gjennom egne lister av favoritter, samt se andre profiler og venners lister og favoritter.',
     bilde: process.env.PUBLIC_URL + "/Img/Colloseum Friends.jpg"
   }, 
 
   {
     id: 68,
     header: 'Prototype',
-    tekst: 'text text text',
+    tekst: ' Jeg fikk første erfaring med å sette sammen alle overganger, funksjoner og prøve å få et prosjekt  til å flyte greit.',
     bilde: process.env.PUBLIC_URL + "/Img/prototype.png"
   }
 
@@ -311,9 +312,9 @@ export const StreamingApp = (()=>{
             </HeaderTop>
 
          
-            <div style={{width:'50%', marginTop:'10rem'}}>
+            <StreamingDiv>
               {StreamingData}
-            </div>
+             </StreamingDiv>
            
         </LearningFlexDiv>  
         

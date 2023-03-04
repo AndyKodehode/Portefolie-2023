@@ -36,15 +36,19 @@ export const About =(() =>{
                   <AboutTextDiv>
                        <H2 style={{textAlign: 'center'}}>Hvem er jeg?</H2> 
                        <AboutP> 
-                            For øyeblikket tar jeg kurs i frontend utvikling gjennom Kodehode og ser for meg en karriere innen design og utvikling.
+                            I 2022 ble jeg ferdig med et kurs i frontend utvikling gjennom Kodehode og ser for meg en karriere innen design.
                                 
                             Jeg liker veldig godt å finne nye løsninger på problemer, både når det gjelder design og brukervennlighet. 
                                 
-                            På kurset har jeg fått erfaring med HTML, CSS og JavaScript, jeg kjenner at jeg blir mer og mer trygg på det. Dette kan dere blant annet se gjennom frontend mentor prosjekt jeg har gjort. 
+                            På kurset har jeg fått erfaring med HTML, CSS og JavaScript, jeg kjenner at jeg blir mer og mer trygg på det. 
                                 
-                            På fritiden driver jeg med improvisert teater og tenker på meg selv som en person med mye humor.
+                            På fritiden har jeg tidligere drevet med improvisert teater og tenker på meg selv som en person med mye humor.
                                 
-                            Jeg er god med mennesker da jeg har jobbet i barnehage i mange år, det tenker jeg kan komme til nytte i møte med kunder og brukere vi skal designe og kode for. Ærlighet er viktig for meg og jeg er flink til å formulere hva jeg kan og ikke kan.
+                            Jeg er god med mennesker da jeg har jobbet i barnehage i mange år, det tenker jeg kan komme til nytte i møte med kunder og brukere vi skal designe og kode for. 
+
+                            I 2023 har jeg brukt tiden til å lære meg mer på egenhånd og hjelpe Fontenehuset med sitt nye kodekurs 'Kodeloftet'
+                            
+                           
                         </AboutP>
                     </AboutTextDiv>
 
