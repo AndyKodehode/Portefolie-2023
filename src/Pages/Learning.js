@@ -127,7 +127,7 @@ export const Learning = (()=>{
                     <LH1 style={{color:'white'}}>Læring</LH1>
                     <BookP style={{marginLeft: '2.2rem'}}> En liten oversikt over hva jeg har gjort av kurs og egenlæring</BookP>
               </div>
-             <LImagDiv>
+             <LImagDiv >
                  <LImg  src={process.env.PUBLIC_URL + "/Img/FangWin.jpg"} alt="book img" />
              </LImagDiv>
            </HeaderTop>

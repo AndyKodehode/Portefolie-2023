@@ -126,26 +126,26 @@ const ProjectDataThree =      [
 
 const ProjectDataFour =[
   {
-    id:'',
+    id:'70',
     header:'Designhefte',
-    tekst:'',
-    bilde:''
+    tekst:'Et hefte jeg har laget til deltagerne hvor jeg får lært bort og repetert de prinsippene jeg har lært i kurs og leksjoner',
+    bilde: process.env.PUBLIC_URL + "/Img/Designhefte fremside.jpg"
 
   },
   {
-    id:'',
+    id:'71',
     header:'Kickoff',
-    tekst:'',
-    bilde:''
+    tekst:'For å lage blest rundt prosjektet og vise alle interesserte hva det går ut på laget vi en Kickoff. Masse folk kom på huset og det ble suksess. Jeg laget designet til promoteringen av eventet.',
+    bilde: process.env.PUBLIC_URL + "/Img/Kick_off.png"
 
   },
 
   {
-    id:'',
+    id:'72',
     header:'Logo',
-    tekst:'',
-    bilde:'',
-    video: ''
+    tekst:'I forkant av kurset laget vi en logo til kurset. Vi ønsket at den skulle være enkel og stilfull, det skulle ikke være en illustrasjon, men samtidig kunne være et kjennetegn for kurset.',
+    bilde:process.env.PUBLIC_URL + "/Img/Logo skisse 2.jpg",
+  
 
   }
 ]
@@ -330,7 +330,7 @@ export const StreamingApp = (()=>{
 
     <div key={app.id} style={{marginBottom: '10rem'}} >
         <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
-        <ProjectImg src={app.bilde}/>
+        <ProjectImg  src={app.bilde}/>
        <p style={{width:'50%'}}>{app.tekst}</p>
     </div>
 
@@ -352,7 +352,7 @@ export const StreamingApp = (()=>{
                     <Link to='/TipCalculator'>
                             <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                           </Link>
-                    <Link to='/Fontenehus'>
+                    <Link to='/Kodeloftet'>
                         <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
                     </Link>
               </div>
@@ -384,9 +384,62 @@ export const StreamingApp = (()=>{
 
 
 export const Kodeloftet= (()=>{
-  return(
-    <div>
-      <h1>hallo</h1>
+
+  const KodeLoftData= ProjectDataFour.map(app =>
+    
+
+    <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection:'row'}} >
+      <div style={{width: '100%'}}>
+        <ProjectImg style={{width: '70%'}} src={app.bilde}/>
+      </div>
+      <div style={{display:'flex', flexDirection:'column', width: '100%'}}>
+        <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
+        <p style={{width:'100%'}}>{app.tekst}</p>
+      </div>
+
+      
     </div>
+
+  )
+
+  return(
+    <LearningFlexDiv>
+            <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right', height:'5rem'}}>
+                <ProjectNavText>
+                <div>
+                    <Link  style={{textDecoration: 'none', color: 'inherit'}}  to='/'>
+                      <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
+                    </Link>
+                </div>
+
+                <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
+                    <Link to='/StreamingApp'>
+                            <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
+                          </Link>
+                    <Link to='/Fontenehus'>
+                        <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
+                    </Link>
+              </div>
+              </ProjectNavText>
+            </NavStyled>
+          
+            <ProjectTop style={{height: '50vh'}} >
+            
+            <div style={{ display:'flex', flexDirection: 'column'}}>
+                    <LH1 style={{color:'white', marginLeft: '1rem'}}>Kodeloftet</LH1>
+                  <BookP style={{marginLeft: '1.2rem'}}> Et forkurs i koding på Fontenehuset i Bergen som vi starter med i mars 2023</BookP>
+            </div>
+                <PimgDiv style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+                    <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/Kodeloftet.jpg"} alt="mobil img" />
+                </PimgDiv>
+            </ProjectTop>
+
+         
+            <StreamingDiv style={{marginBottom: '10rem'}}>
+              {KodeLoftData}
+              <video style={{width: '100%'}} src= {process.env.PUBLIC_URL + "/Img/Kodeloftet_logo.mp4"} controls />
+             </StreamingDiv>
+           
+        </LearningFlexDiv>  
   )
 })
