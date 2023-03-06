@@ -66,14 +66,14 @@ return(
         }}>
         
               <H2div>
-                <H2>Tips-kalkulator</H2>
+                <H2>Javascript</H2>
               </H2div>
             
             
 
               <H3div>
                   <H3>
-                    Tips kalkulator fra Front-end mentor
+                    Mine små Javascript prosject 
                   </H3>
               </H3div>
 
@@ -89,7 +89,7 @@ return(
                   }}>
               
                   
-                  <FrameImgTwo src={process.env.PUBLIC_URL+"/Img/TipCalculator kuttet.jpg"} alt="next"/>
+                  <FrameImgTwo src={process.env.PUBLIC_URL+"/Img/TCkode-kuttet.png"} alt="next"/>
               </div>
               
         

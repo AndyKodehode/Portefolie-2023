@@ -960,7 +960,6 @@ export const ProjectNavText = styled.div`
   display: flex; 
   flex-direction: row;
   margin-bottom: 2rem;
-  margin-right: 4rem;
   justify-content:space-between;
   width: 100%;
 `
@@ -1075,3 +1074,71 @@ margin-top: 5rem;
 
 
 `
+
+export const ProjectTop = styled.div`
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   width: 100%;
+   height: 40vh;
+   background-color: #70ACE0;
+   justify-content: space-evenly;
+   padding-top: 5rem;
+   margin-bottom: 10rem;
+   /* justify-content: center; */
+   @media (min-width: 768px) {
+    height: 40vh;
+    background-color: #70ACE0 ;
+    align-items: center;
+    margin-bottom: 10rem;
+    flex-direction: row;
+    
+    
+  }`
+
+
+export const PimgDiv = styled.div`
+
+width: 70%;
+margin-top: 3rem;
+
+@media (min-width: 700px){
+width: 35%;
+height: 100%;
+margin-top: 10rem;
+
+
+}`
+
+
+ export const PfonteneImgDiv = styled.div`
+ 
+ width: 50%;
+ margin-top: 3rem;
+
+ 
+
+@media (min-width: 700px){
+width: 40%;
+height: 100%;
+margin-top: 0rem;
+
+
+
+
+
+
+}
+ 
+ `
+export const CVimg = styled.img`
+
+width: 100%;
+
+@media( min-width: 700px){
+  width: 70%;
+}
+
+`
+
+ 

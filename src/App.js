@@ -9,6 +9,7 @@ import { StreamingApp } from './Pages/Projects';
 import { Learning } from './Pages/Learning';
 import { KodeHodeAttest } from "./Pages/KodehodeAttest"
 import { IdfKurs } from './Pages/IDFbevis';
+import { CV } from './Pages/CV';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="Learning" element={<Learning/>} />
         <Route path="KhAttest" element={<KodeHodeAttest/>} />
         <Route path="IDFkurs" element={<IdfKurs/>} />
+        <Route path="CV" element= {<CV/>} />
 
       </Routes>
    

@@ -1,7 +1,6 @@
 
-import { BookP, HeaderTop } from "../Components/styled"
+import { BookP} from "../Components/styled"
 import { LH1 } from "../Components/styled"
-import { LImagDiv } from "../Components/styled"
 import { LImg } from "../Components/styled"
 import { LearningFlexDiv } from "../Components/styled"
 import { NavStyled } from "../Components/styled"
@@ -14,6 +13,9 @@ import { ProjectH2 } from "../Components/styled"
 import { ProjectImgDiv } from "../Components/styled"
 import { ProjectNavText } from "../Components/styled"
 import { StreamingDiv } from "../Components/styled"
+import { ProjectTop } from "../Components/styled"
+import { PimgDiv } from "../Components/styled"
+import { PfonteneImgDiv } from "../Components/styled"
 // import { Carousel } from "../Components/carousel"
 
 
@@ -63,10 +65,28 @@ const ProjectDataTwo =
         [
             {
               id: 51,
-              header:'Ide og prosess',
-              tekst:'Jeg begynte med å gjøre brukerundersøkelse for å finne ut av hva medlemmene på huset trenger for å bli motiverte og ha bra arbeidsdager',
-              bilde: process.env.PUBLIC_URL + "/Img/Brukerundersøkelse.png"
+              header:'TipCalculator',
+              tekst:'Et FrontEnd mentor prosjekt som jeg utvidet med enkelte funksjoner',
+              bilde: process.env.PUBLIC_URL + "/Img/TipCalculator.jpg",
+              link: 'https://github.com/AndyKodehode/tip-calculator'
+            },
+
+            {
+              id: 52,
+              header:'Handleliste',
+              tekst:'Et to-do liste prosjekt, hvor vi kan legge til å fjerne elementer i en handleliste',
+              bilde: process.env.PUBLIC_URL + "/Img/Grocery list.png",
+              link:'https://github.com/AndyKodehode/todo-list'
+            },
+
+            {
+              id: 53,
+              header:'Trommemaskin',
+              tekst:'Et prosjekt hvor vi skulle koble lyder til bokstaver på tastaturet for å få en trommemaskin',
+              bilde: process.env.PUBLIC_URL + "/Img/drum-machine 2.png",
+              link: 'https://github.com/AndyKodehode/drum-machine'
             }
+
           
           ]
 
@@ -159,35 +179,37 @@ export const Fontenehus = (()=>{
     return(
         <div>
          <LearningFlexDiv>
-            <NavStyled  style={{backgroundColor:'#70ACE0'}}>
+            <NavStyled  style={{backgroundColor:'#70ACE0', height:'5rem'}}>
               <ProjectNavText>
                   <div>
                       <Link to='/'  style={{textDecoration: 'none', color: 'inherit'}}>
-                          <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
+                          <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '0rem'}}>Hjem</BookP> 
                       </Link>
                   </div>
 
-                  <div style={{display:'flex', flexDirection:'row'}}>
+                  <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
                       <Link to='/Streamingapp'>
-                        <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
+                        <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                       </Link>
                       <Link to='/TipCalculator'>
-                        <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
+                        <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
                       </Link>
                   </div>
               </ProjectNavText>
             </NavStyled>
            
-            <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
+            <ProjectTop style={{marginBottom: '7rem'}}>
              
-            <div style={{ display:'flex', flexDirection: 'column'}}>
-                    <LH1 style={{color:'white'}}>Fontenehuset app</LH1>
-                    <BookP style={{marginLeft: '2.2rem'}}> Et pågående prosjekt hvor jeg koder en mobilapp i React</BookP>
-            </div>
-                <LImagDiv  style={{marginRight:'1.5rem'}}>
-                    <LImg style={{width:'60%'}} src={process.env.PUBLIC_URL + "/Img/mobil kopi.png"} alt="mobil img" />
-                </LImagDiv>
-            </HeaderTop>
+                <div style={{ display:'flex', flexDirection: 'column'}}>
+                        <LH1 style={{color:'white'}}>Fontenehuset app</LH1>
+                        <BookP style={{marginLeft: '2.2rem'}}> Et pågående prosjekt hvor jeg koder en mobilapp i React</BookP>
+                </div>
+
+                 <PfonteneImgDiv>
+                    <LImg style={{width:'50%'}} src={process.env.PUBLIC_URL + "/Img/mobil kopi.png"} alt="mobil img" />
+                  </PfonteneImgDiv>
+
+            </ProjectTop>
 
             <ProjectDiv>
 
@@ -222,6 +244,7 @@ export const TipCalculator = (()=>{
         <H2>{app.header}</H2>
         <ProjectImg src={app.bilde}/>
         <p style={{width:'50%'}}>{app.tekst}</p>
+        <a href={app.link}><p>GitHub</p></a>
     </div>
     
     )
@@ -230,40 +253,43 @@ export const TipCalculator = (()=>{
     return(
 
         <LearningFlexDiv>
-        <NavStyled  style={{backgroundColor:'#70ACE0'}}>
+        <NavStyled  style={{backgroundColor:'#70ACE0', height:'5rem'}}>
 
           <ProjectNavText>
               <div>
-                <Link to='/'>
-                  <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Hjem</BookP> 
+                <Link  style={{textDecoration: 'none', color: 'inherit'}} to='/'>
+                  <BookP style={{textAlign: 'center', width: '15vw', marginRight: '0rem'}}>Hjem</BookP> 
                 </Link>
               </div>
 
-              <div style={{display:'flex', flexDirection:'row'}}>
-                <Link to='/Fontenehus'>
-                      <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
+              <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
+                   <Link to='/Fontenehus'>
+                      <BookP style={{textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                     </Link>
                 <Link to='/StreamingApp'>
-                  <BookP style={{textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
+                  <BookP style={{textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
                 </Link>
               </div>
           </ProjectNavText>
         </NavStyled>
        
-        <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
          
-        <div style={{ display:'flex', flexDirection: 'column'}}>
-                <LH1 style={{color:'white'}}>TipCalculator</LH1>
-                <BookP style={{marginLeft: '2.2rem'}}> Et FrontEnd mentor prosjekt som jeg kodet i Javascript</BookP>
-        </div>
-            <LImagDiv  style={{marginRight:'1.5rem'}}>
-                <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/TipCalculator.jpg"} alt="mobil img" />
-            </LImagDiv>
-        </HeaderTop>
+         <ProjectTop>
+            <div style={{ display:'flex', flexDirection: 'column', width: '40%', alignItems: 'center', marginRight:'5rem'}}>
+                    <LH1 style={{color:'white', marginLeft: '1rem'}}>Javascript</LH1>
+                    <BookP style={{marginLeft: '3rem', marginRight: '2rem'}}> De javascript prosjektene jeg har gjort under Kodehodekurset</BookP>
+            </div>
+            <PimgDiv>
+                <LImg style={{width:'100%', marginLeft: '1rem'}} src={process.env.PUBLIC_URL + "/Img/TCkode.png"} alt="mobil img" />
+            </PimgDiv>
 
-        <div style={{width:'50%', marginTop:'10rem'}}>
+
+         </ProjectTop>
+        
+
+        <StreamingDiv>
           {CalculatorData}
-        </div>
+        </StreamingDiv>
 
      
     </LearningFlexDiv>  
@@ -288,28 +314,35 @@ export const StreamingApp = (()=>{
     return(
          
         <LearningFlexDiv>
-            <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right'}}>
-                <Link to='/'>
-                  <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
-                </Link>
-                <Link to='/TipCalculator'>
-                        <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Forrige prosjekt</BookP> 
-                      </Link>
-                <Link to='/Fontenehus'>
-                <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem'}}>Neste prosjekt</BookP> 
-              </Link>
+            <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right', height:'5rem'}}>
+                <ProjectNavText>
+                <div>
+                    <Link  style={{textDecoration: 'none', color: 'inherit'}}  to='/'>
+                      <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
+                    </Link>
+                </div>
+
+                <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
+                    <Link to='/TipCalculator'>
+                            <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
+                          </Link>
+                    <Link to='/Fontenehus'>
+                        <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
+                    </Link>
+              </div>
+              </ProjectNavText>
             </NavStyled>
           
-            <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
+            <ProjectTop style={{height: '70vh'}} >
             
             <div style={{ display:'flex', flexDirection: 'column'}}>
-                    <LH1 style={{color:'white'}}>StreamingApp</LH1>
-                    <BookP style={{marginLeft: '2.2rem'}}> Et kreativt prosjekt som jeg gjorde i 2019/20</BookP>
+                    <LH1 style={{color:'white', marginLeft: '2.8rem'}}>StreamingApp</LH1>
+                    <BookP style={{marginLeft: '3rem'}}> Et kreativt prosjekt som jeg gjorde i 2019/20</BookP>
             </div>
-                <LImagDiv  style={{marginRight:'1.5rem'}}>
-                    <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/streaming-home.jpg"} alt="streaming img" />
-                </LImagDiv>
-            </HeaderTop>
+                <PimgDiv>
+                    <LImg style={{width:'80%', marginLeft: '3rem'}} src={process.env.PUBLIC_URL + "/Img/streaming-home.jpg"} alt="mobil img" />
+                </PimgDiv>
+            </ProjectTop>
 
          
             <StreamingDiv>

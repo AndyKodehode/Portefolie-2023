@@ -61,13 +61,20 @@ export const MainNav = ((props)=>{
                         </div>
                             <div style={{display:'flex', width:'100%', height:'100%', flexDirection:'column', justifyContent:'center', alignItems: 'center'}}>
                                 <NavHover>
-                                   <NavP>CV</NavP>
+                                    <Link style={{textDecoration:'none'}} to='/CV'>
+                                       <NavP>CV</NavP>
+                                    </Link>
                                 </NavHover>
                                 <NavHover>
                                    <NavP>Kontakt</NavP>
                                 </NavHover>
                                 <NavHover>
                                     <NavP>Kurs</NavP>
+                                </NavHover>
+                                <NavHover>
+                                    <Link  style={{textDecoration:'none'}} to='/'>
+                                      <NavP>Hjem</NavP>
+                                    </Link>
                                 </NavHover>
                             </div>
                 </div>
@@ -86,7 +93,9 @@ export const MainNav = ((props)=>{
                         </Link>
                     </div>
                     <div style={{display:'flex', flexDirection:'row'}}>
-                        <NavP>CV</NavP>
+                         <Link style={{textDecoration:'none'}} to='/CV'>
+                           <NavP>CV</NavP>
+                          </Link>
                         <NavP>Kontakt</NavP>
                         <NavP>Kurs</NavP>
                     </div>
