@@ -124,6 +124,32 @@ const ProjectDataThree =      [
 
 ]
 
+const ProjectDataFour =[
+  {
+    id:'',
+    header:'Designhefte',
+    tekst:'',
+    bilde:''
+
+  },
+  {
+    id:'',
+    header:'Kickoff',
+    tekst:'',
+    bilde:''
+
+  },
+
+  {
+    id:'',
+    header:'Logo',
+    tekst:'',
+    bilde:'',
+    video: ''
+
+  }
+]
+
 
 // const ProjectCarousel = [
 //   {
@@ -353,4 +379,14 @@ export const StreamingApp = (()=>{
         
        
     )
+})
+
+
+
+export const Kodeloftet= (()=>{
+  return(
+    <div>
+      <h1>hallo</h1>
+    </div>
+  )
 })

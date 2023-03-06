@@ -42,8 +42,8 @@ export const FrontsideLearning = (()=>{
                     >
                         <BodyP style={{ width: '10rem' }}>
                             
-                            Selv om jeg ikke har en offesiell utdanning så prøver jeg å lese og lære om feltet.  
-                            Jeg bruker Skillshare og Domestika for kurs som jeg syns er relevante i tillegg til bøker om design.
+                            Da jeg har en kortere formell utdanning prøver jeg å tilegne meg kunnskap gjennom lesing, prøving og feiling.  
+                            Jeg bruker Skillshare og Domestika for kurs som jeg syns er relevante i tillegg til bøker om design og tips fra flinke designere på Youtube.
                         </BodyP>
                     </div>
 

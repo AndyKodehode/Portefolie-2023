@@ -460,7 +460,7 @@ border-color: lightblue; */
 
 export const FLearningStyle = styled.div`
 width: 23rem;
-height: 19rem;
+height: 22rem;
 background-color: #95E5CC;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr ;
@@ -468,8 +468,8 @@ grid-template-rows: 1fr 1fr 1fr 1fr ;
 margin-bottom: 5rem;
 
 @media( min-width: 700px){
-   width: 30rem;
-   height: 23rem;
+   width: 35rem;
+   height: 27rem;
    margin-top: 5rem;
 
 }
@@ -509,8 +509,10 @@ margin-bottom: 3rem;
 }
 
 @media( min-width: 700px){
-
+  border-width: 3px;
   width: 6rem;
+  height: 2rem;
+  font-weight: 550;
 }
 
 `

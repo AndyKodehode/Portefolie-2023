@@ -125,7 +125,7 @@ export const Learning = (()=>{
            <HeaderTop style={{backgroundColor:'#70ACE0', marginTop: '0rem', marginBottom: '10rem', flexDirection: 'row', height: '40vh', justifyContent: 'space-evenly', paddingTop: '5rem'}}>
               <div style={{ display:'flex', flexDirection: 'column'}}>
                     <LH1 style={{color:'white'}}>Læring</LH1>
-                    <BookP style={{marginLeft: '2.2rem'}}> En liten oversikt over hva jeg har gjort av egenlæring</BookP>
+                    <BookP style={{marginLeft: '2.2rem'}}> En liten oversikt over hva jeg har gjort av kurs og egenlæring</BookP>
               </div>
              <LImagDiv>
                  <LImg  src={process.env.PUBLIC_URL + "/Img/FangWin.jpg"} alt="book img" />
