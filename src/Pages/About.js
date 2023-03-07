@@ -1,5 +1,5 @@
 import { MainNav } from "../Components/Nav"
-import { H2, AboutP, AboutDiv, AboutImg, AboutTextDiv } from "../Components/styled"
+import { H2, AboutP, AboutDiv, AboutImg, AboutTextDiv, AboutHeaderDiv } from "../Components/styled"
 
 
 
@@ -34,7 +34,10 @@ export const About =(() =>{
                 <AboutDiv>
                  
                   <AboutTextDiv>
-                       <H2 style={{textAlign: 'center'}}>Hvem er jeg?</H2> 
+                         <AboutHeaderDiv>
+                            <H2>Hvem er jeg?</H2> 
+                         </AboutHeaderDiv>
+                      
                        <AboutP> 
                             I 2022 ble jeg ferdig med et kurs i frontend utvikling gjennom Kodehode og ser for meg en karriere innen design.
                                 
@@ -53,7 +56,7 @@ export const About =(() =>{
                     </AboutTextDiv>
 
                     <AboutImg>
-                       <img style={{width:'60%'}} src={process.env.PUBLIC_URL + "/Img/meg 2.jpg"} alt='meg selv'/>
+                       <img style={{width:'60%'}} src={process.env.PUBLIC_URL + "/Img/MegSelv.JPG"} alt='meg selv'/>
                     </AboutImg>
 
                 </AboutDiv>

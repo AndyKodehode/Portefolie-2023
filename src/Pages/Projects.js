@@ -16,6 +16,7 @@ import { StreamingDiv } from "../Components/styled"
 import { ProjectTop } from "../Components/styled"
 import { PimgDiv } from "../Components/styled"
 import { PfonteneImgDiv } from "../Components/styled"
+import { ProjectHeaderP } from "../Components/styled"
 // import { Carousel } from "../Components/carousel"
 
 
@@ -303,7 +304,7 @@ export const TipCalculator = (()=>{
          <ProjectTop>
             <div style={{ display:'flex', flexDirection: 'column', width: '40%', alignItems: 'center', marginRight:'5rem'}}>
                     <LH1 style={{color:'white', marginLeft: '1rem'}}>Javascript</LH1>
-                    <BookP style={{marginLeft: '3rem', marginRight: '2rem'}}> De javascript prosjektene jeg har gjort under Kodehodekurset</BookP>
+                    <ProjectHeaderP> De javascript prosjektene jeg har gjort under Kodehodekurset</ProjectHeaderP>
             </div>
             <PimgDiv>
                 <LImg style={{width:'100%', marginLeft: '1rem'}} src={process.env.PUBLIC_URL + "/Img/TCkode.png"} alt="mobil img" />

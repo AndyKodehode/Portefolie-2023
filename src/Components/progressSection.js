@@ -2,13 +2,18 @@ import { ProgressbarHTML, ProgressbarAI, ProgressbarCSS, ProgressbarFigma, Progr
 import { ProgressDiv } from "./styled";
 import { CircleImg } from "./styled";
 import { ProgressFrame } from "./styled";
+import { H2light } from "./styled";
 
 
 export const  ProgressSection =(()=>{
 
     return(
      
-   <div style={{display:'flex', justifyContent: 'center',  width: '80%'}}>
+   <div style={{display:'flex', alignItems: 'center',  width: '100%', justifyContent: 'center', flexDirection: 'column', marginTop: '7rem'}}>
+
+    <div style={{width: '100%', display: 'flex', justifyContent:'center'}}>
+      <H2light>Programmer jeg kan</H2light>
+    </div>
       
     <ProgressFrame>
       <ProgressDiv>

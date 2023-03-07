@@ -108,16 +108,16 @@ margin-top: 2rem;
 export const HeaderImgDiv = styled.div`
 
 position: absolute;
-top: 300px;
+top: 270px;
 left:20px;
-width: 20rem;
+width: 18rem;
 
 
 @media(min-width: 700px){
   /* display: none; */
-  left: 800px;
+  left: 790px;
   top: 800px;
-  width: 30rem;
+  width: 20rem;
 }
 
 `
@@ -132,6 +132,8 @@ background-color: #70ACE0;
 @media (min-width: 700px) {
   display: block;
   margin-top: 2rem;
+  height: 28rem;
+  width: 24rem;
   
 }
 
@@ -304,6 +306,25 @@ color: '#062D4F';
 
 `
 
+export const H2light = styled.h2`
+
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: 200;
+line-height: 44px;
+letter-spacing: 0em;
+color: '#062D4F';
+
+@media( min-width: 700px){
+  
+  font-size: 25px;
+
+}
+
+`
+
+
+
 export const FrameOneDiv = styled.div`
 
 margin-left: 2rem;
@@ -419,7 +440,7 @@ export const ProgressFrame = styled.div`
 display: flex;
 flex-direction: column;
 width: 20rem;
-margin-top: 5rem;
+margin-top: 2rem;
 margin-left: 2rem;
 
 @media(min-width: 700px){
@@ -427,9 +448,9 @@ margin-left: 2rem;
   grid-template-rows: 1fr 1fr 1fr 1fr ;
   grid-template-columns: 1fr 1fr ;
   grid-column-gap: 5rem;
-  margin-top: 7rem;
+  margin-top: 2rem;
   margin-left: 0rem;
-  margin-right: 3rem;
+  margin-right: 20rem;
 }
 
 `
@@ -1142,5 +1163,38 @@ width: 100%;
 }
 
 `
+
+export const ProjectHeaderP = styled.p`
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 300;
+line-height: 20px;
+letter-spacing: 0em;
+margin-left: 1.5rem;
+text-align: left;
+width: 45vw;
+margin-bottom: 1rem;
+color: black;
+
+@media(min-width: 700px){
+  width: 20vw;
+  margin-right: 3rem;
+  font-size: 18px;
+}`
+
+
+export const AboutHeaderDiv = styled.div`
+
+width: 70%;
+
+@media (min-width: 700px){
+  width: 55%;
+  margin-right: 1rem;
+}
+
+
+
+`
+
 
  
