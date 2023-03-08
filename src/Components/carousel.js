@@ -35,10 +35,10 @@ const backClick =()=>{
 
 return(
 
-<BookFlexDiv style={{display: 'flex', flexDirection:'column', width: '80%', marginTop: '2rem'}}> 
+<BookFlexDiv style={{display: 'flex', flexDirection:'column', width: '100%', marginTop: '2rem'}}> 
    
      
-     <div   style={{display:'flex', flexDirection: 'row', width: '70%', justifyContent:'center' }} >
+     <div   style={{display:'flex', flexDirection: 'row', width: '100%', justifyContent:'center' }} >
 
             <CircleBtn  onClick={backClick} style={{marginRight:'4%'}}>
                 
@@ -46,7 +46,7 @@ return(
             </CircleBtn>
 
             <BooksImg  style={{zIndex:'0'}} key={carouselData[carsouselImg].id}>
-                    <img src={carouselData[carsouselImg].image} alt="carsousel??"/>
+                    <img style={{width: '100%', objectFit: 'contain'}} src={carouselData[carsouselImg].image} alt="carsousel??"/>
                 
                     
             </BooksImg>

@@ -662,7 +662,7 @@ export const BooksImg = styled.div`
 display: flex;
 justify-content: center;
 width: 80vw;
-height: 35vh;
+height: 30vh;
 margin-top: 1rem;
 z-index: 1;
 
@@ -727,7 +727,7 @@ export const BookBox = styled.div`
 
 position: absolute;
 width: 55vw;
-height: 29vh;
+height: 28vh;
 background-color: #70ACE0;
 z-index: 2;
 top: 11rem;
@@ -763,7 +763,7 @@ background-color: white;
 border-style: solid;
 border-color: lightgray;
 z-index: 1;
-margin-top: 6rem;
+margin-top: 9rem;
 
 @media (min-width: 700px){
 
