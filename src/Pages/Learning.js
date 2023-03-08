@@ -27,6 +27,7 @@ import { CircleFlexDiv } from "../Components/styled"
 import { CircleText } from "../Components/styled"
 import { LButton } from "../Components/styled"
 import { KursBtn } from "../Components/styled"
+import { Bimg } from "../Components/styled"
 
 import { Link } from "react-router-dom"
 
@@ -142,7 +143,7 @@ export const Learning = (()=>{
 
                     
                         <BooksImg>
-                            <img src={process.env.PUBLIC_URL + "/Img/Rocket Surgery.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
+                            <Bimg src={process.env.PUBLIC_URL + "/Img/Rocket Surgery.jpg"} alt="rocket surgery"/>
                         </BooksImg>
 
                         <BookBox>
@@ -159,7 +160,7 @@ export const Learning = (()=>{
                     
                     
                         <BooksImg>
-                            <img src={process.env.PUBLIC_URL + "/Img/drittsystem.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
+                            <Bimg src={process.env.PUBLIC_URL + "/Img/drittsystem.jpg"} alt="rocket surgery" />
                         </BooksImg>
 
                         <BookBox>
@@ -176,7 +177,7 @@ export const Learning = (()=>{
                         
                                 
                             <BooksImg>
-                                <img src={process.env.PUBLIC_URL + "/Img/100 things 2.jpg"} alt="rocket surgery" style={{objectFit: 'cover', width:'100%'}}/>
+                                <Bimg src={process.env.PUBLIC_URL + "/Img/100 things 2.jpg"} alt="rocket surgery" />
                             </BooksImg>
 
                             <BookBox>
@@ -200,7 +201,7 @@ export const Learning = (()=>{
                             <NavP>IDF</NavP>
 
                             <BooksImg>
-                                <img  src={process.env.PUBLIC_URL + "/Img/IDFKuttet.png"} alt= "IDF kurs"  style={{objectFit: 'cover', width:'100%'}}/>
+                                <img  src={process.env.PUBLIC_URL + "/Img/IDFKuttet.png"} alt= "IDF kurs"  style={{objectFit: 'cover', width:'90%'}}/>
                             </BooksImg>
                                 
                                 <div>
@@ -231,7 +232,7 @@ export const Learning = (()=>{
                             <NavP>Kodehode</NavP>
 
                             <BooksImg>
-                                <img  src={process.env.PUBLIC_URL + "/Img/koding.jpg"} alt= "Kodehode kurs"  style={{objectFit: 'cover', width:'100%'}}/>
+                                <img  src={process.env.PUBLIC_URL + "/Img/koding.jpg"} alt= "Kodehode kurs"  style={{objectFit: 'cover', width:'90%'}}/>
                             </BooksImg>
 
                             <BookP style={{color:'#0A2236'}}>

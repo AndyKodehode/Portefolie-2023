@@ -108,9 +108,9 @@ margin-top: 2rem;
 export const HeaderImgDiv = styled.div`
 
 position: absolute;
-top: 270px;
-left:20px;
-width: 18rem;
+top: 290px;
+left:25px;
+width: 15rem;
 
 
 @media(min-width: 700px){
@@ -309,15 +309,16 @@ color: '#062D4F';
 export const H2light = styled.h2`
 
 font-family: 'Montserrat', sans-serif;
+font-style: italic;
 font-size: 20px;
-font-weight: 200;
+font-weight: lighter;
 line-height: 44px;
 letter-spacing: 0em;
 color: '#062D4F';
 
 @media( min-width: 700px){
   
-  font-size: 25px;
+  font-size: 23px;
 
 }
 
@@ -660,16 +661,28 @@ export const BooksImg = styled.div`
 
 display: flex;
 justify-content: center;
-width: 25rem;
-height: 12rem;
+width: 80vw;
+height: 35vh;
 margin-top: 1rem;
 z-index: 1;
 
-@media(min-width: 700px){
-  width: 38rem;
-  height: 22rem;
+@media(min-width: 900px){
+  width: 55vw;
+  height: 55vh ;
 }
 
+
+`
+
+export const Bimg = styled.img`
+width: 90%;
+object-fit: cover;
+
+@media (min-width: 900px){
+  
+  width: 80% ;
+
+}
 
 `
 
@@ -697,7 +710,12 @@ margin-left: 1.5rem;
 margin-bottom: 1rem;
 color: black;
 
-@media(min-width: 700px){
+@media (min-width: 700px){
+  width: 24vw;
+  margin-bottom: 3rem;
+}
+
+@media(min-width: 1100px){
   width: 20vw;
   margin-right: 7rem;
   font-size: 18px;
@@ -708,19 +726,27 @@ color: black;
 export const BookBox = styled.div`
 
 position: absolute;
-width: 19rem;
-height: 11rem;
+width: 55vw;
+height: 29vh;
 background-color: #70ACE0;
 z-index: 2;
 top: 11rem;
-left: 5rem;
+left: 6rem;
 padding: 1rem;
 margin-bottom: 2rem;
 
 @media (min-width: 700px){
+  left: 20rem;
+  width:40vw;
+  top: 12rem;
+  height: 33vh;
+
+}
+
+@media (min-width: 1200px){
   width: 22rem;
   height:12rem;
-  left: 20rem;
+  left: 30rem;
   top:15rem;
 }
 
@@ -824,7 +850,7 @@ export const CarouselFlexDiv = styled.div`
 
 display: flex;
 flex-direction: column;
-width: 100%;
+width: 90%;
 align-items: center;
 justify-content: center;
 

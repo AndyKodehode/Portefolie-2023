@@ -21,7 +21,7 @@ export const ProgressbarCSS =(()=>{
     return(
 
         <OuterBar>
-            <InnerBar style={{width: '70%'}}></InnerBar>
+            <InnerBar style={{width: '50%'}}></InnerBar>
         </OuterBar>
     )
 })
