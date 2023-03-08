@@ -727,7 +727,7 @@ export const BookBox = styled.div`
 
 position: absolute;
 width: 55vw;
-height: 28vh;
+height: 32vh;
 background-color: #70ACE0;
 z-index: 2;
 top: 11rem;
@@ -763,12 +763,12 @@ background-color: white;
 border-style: solid;
 border-color: lightgray;
 z-index: 1;
-margin-top: 9rem;
+margin-top: 6rem;
 
 @media (min-width: 700px){
 
  margin-top: 11.5rem;
- width: 2.5rem;
+ width: 3rem;
  height: 2.5rem;
 }
 
