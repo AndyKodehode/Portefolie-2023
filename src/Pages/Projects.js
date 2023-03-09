@@ -280,7 +280,7 @@ export const TipCalculator = (()=>{
     return(
 
         <LearningFlexDiv>
-        <NavStyled  style={{backgroundColor:'#70ACE0', height:'5rem'}}>
+        <NavStyled  style={{backgroundColor:'#70ACE0', height:'7rem',zIndex:'0'}}>
 
           <ProjectNavText>
               <div>

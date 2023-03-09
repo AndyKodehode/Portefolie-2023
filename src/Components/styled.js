@@ -91,7 +91,7 @@ export const H1 = styled.h1`
 font-family: 'Montserrat', sans-serif;
 font-size: 32px;
 font-weight: 700;
-line-height: 39px;
+line-height: 35px;
 letter-spacing: 0em;
 text-align: left;
 margin-left: 2rem;
@@ -645,13 +645,15 @@ export const LH1 = styled.h1`
 font-family: 'Montserrat', sans-serif;
 font-size: 40px;
 font-weight: 700;
-line-height: 39px;
+line-height: 47px;
 letter-spacing: 0em;
 text-align: left;
 color:  #0A2236;
 margin-left: 2rem;
+margin-top: 5rem;
 @media (min-width: 700px){
   font-size: 75px;
+  margin-top: 2rem;
 }
 
 
@@ -662,7 +664,7 @@ export const BooksImg = styled.div`
 display: flex;
 justify-content: center;
 width: 80vw;
-height: 30vh;
+height: 35vh;
 margin-top: 1rem;
 z-index: 1;
 
@@ -701,13 +703,13 @@ align-items: center;
 export const BookP = styled.p`
 font-family: 'Montserrat', sans-serif;
 font-size: 14px;
-font-weight: 300;
+font-weight: 200;
 line-height: 20px;
 letter-spacing: 0em;
 text-align: left;
 width: 45vw;
 margin-left: 1.5rem;
-margin-bottom: 1rem;
+margin-bottom: 2rem;
 color: black;
 
 @media (min-width: 700px){
@@ -737,7 +739,7 @@ margin-bottom: 2rem;
 
 @media (min-width: 700px){
   left: 20rem;
-  width:40vw;
+  width:35vw;
   top: 12rem;
   height: 33vh;
 
@@ -858,7 +860,7 @@ justify-content: center;
 
 @media (min-width: 700px){
   margin-bottom: 5rem;
-  width: 50%;
+  width: 60%;
 }
 
 
@@ -1134,6 +1136,7 @@ export const ProjectTop = styled.div`
    justify-content: space-evenly;
    padding-top: 5rem;
    margin-bottom: 10rem;
+   z-index: 1;
    /* justify-content: center; */
    @media (min-width: 768px) {
     height: 40vh;
