@@ -12,12 +12,14 @@ import { IdfKurs } from './Pages/IDFbevis';
 import { CV } from './Pages/CV';
 import { Kodeloftet } from './Pages/Projects';
 
+
 function App() {
   return (
     <div className="App" >
       
       
       <Routes>
+       
         <Route path="/" element={<Firstpage/>} /> 
         <Route path="About" element={<About/>} />
         <Route path="Fontenehus" element={<Fontenehus/>} />

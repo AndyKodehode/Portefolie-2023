@@ -1225,5 +1225,35 @@ width: 70%;
 
 `
 
+export const KodeLimg = styled.div`
+
+width: 100%;
+margin-top: 2rem;
+
+@media( min-width: 900px){
+ margin-top: 0rem;
+}
+
+`
+
+export const KodeLh2 = styled.h2`
+
+
+font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: 700;
+line-height: 44px;
+letter-spacing: 0em;
+color: '#062D4F';
+
+@media( min-width: 700px){
+  
+  font-size: 30px;
+
+
+
+}
+
+`
 
  

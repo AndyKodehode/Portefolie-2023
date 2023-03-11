@@ -16,7 +16,8 @@ import { StreamingDiv } from "../Components/styled"
 import { ProjectTop } from "../Components/styled"
 import { PimgDiv } from "../Components/styled"
 import { PfonteneImgDiv } from "../Components/styled"
-import { ProjectHeaderP } from "../Components/styled"
+import { ProjectHeaderP, KodeLimg } from "../Components/styled"
+
 // import { Carousel } from "../Components/carousel"
 
 
@@ -144,7 +145,7 @@ const ProjectDataFour =[
   {
     id:'72',
     header:'Logo',
-    tekst:'I forkant av kurset laget vi en logo til kurset. Vi ønsket at den skulle være enkel og stilfull, det skulle ikke være en illustrasjon, men samtidig kunne være et kjennetegn for kurset.',
+    tekst:'I forkant av kurset var vi tre stykker som jobbet med en logo til kurset. Vi ønsket at den skulle være enkel og stilfull, det skulle ikke være en illustrasjon, men samtidig kunne være et kjennetegn for kurset. Til slutt laget vi en animasjon av logoen i After effects',
     bilde:process.env.PUBLIC_URL + "/Img/Logo skisse 2.jpg",
   
 
@@ -390,10 +391,10 @@ export const Kodeloftet= (()=>{
     
 
     <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection:'row'}} >
-      <div style={{width: '100%'}}>
+       <KodeLimg>
         <ProjectImg style={{width: '70%'}} src={app.bilde}/>
-      </div>
-      <div style={{display:'flex', flexDirection:'column', width: '100%'}}>
+       </KodeLimg>
+       <div style={{display:'flex', flexDirection:'column', width: '100%'}}>
         <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
         <p style={{width:'100%'}}>{app.tekst}</p>
       </div>
