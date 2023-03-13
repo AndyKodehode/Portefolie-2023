@@ -151,6 +151,7 @@ export const BotomHeaderDiv = styled.div`
  @media (min-width: 2000px){
   justify-content: center;
   align-items: center;
+  width: 100%;
  }
 
 `
