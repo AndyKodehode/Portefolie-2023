@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Portefolie-2023/static/css/main.754ebb54.css",
-    "main.js": "/Portefolie-2023/static/js/main.f2cd759f.js",
+    "main.js": "/Portefolie-2023/static/js/main.cf7e301e.js",
     "static/js/787.34099e4b.chunk.js": "/Portefolie-2023/static/js/787.34099e4b.chunk.js",
     "index.html": "/Portefolie-2023/index.html",
     "main.754ebb54.css.map": "/Portefolie-2023/static/css/main.754ebb54.css.map",
-    "main.f2cd759f.js.map": "/Portefolie-2023/static/js/main.f2cd759f.js.map",
+    "main.cf7e301e.js.map": "/Portefolie-2023/static/js/main.cf7e301e.js.map",
     "787.34099e4b.chunk.js.map": "/Portefolie-2023/static/js/787.34099e4b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.754ebb54.css",
-    "static/js/main.f2cd759f.js"
+    "static/js/main.cf7e301e.js"
   ]
 }
