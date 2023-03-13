@@ -156,6 +156,7 @@ export const BotomHeaderDiv = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-right: 10rem;
  }
 
 `
@@ -780,7 +781,7 @@ margin-bottom: 2rem;
   width: 35rem;
   height: 18rem;
   left: 40rem;
-  top: 10rem;
+  top: 20rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
