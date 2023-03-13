@@ -674,9 +674,9 @@ z-index: 1;
 }
 
 @media (min-width: 2000px){
-  width: 30vw;
-  height: 30vh;
-  margin-top: 5rem;
+  width: 35vw;
+  height: 35vh;
+  margin-top: 3rem;
 }
 
 
@@ -762,11 +762,14 @@ margin-bottom: 2rem;
 
 @media (min-width: 2000px){
 
-  width: 40rem;
-  height: 20rem;
-  left: 50rem;
+  width: 35rem;
+  height: 18rem;
+  left: 40rem;
   top: 30rem;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
 
 `
