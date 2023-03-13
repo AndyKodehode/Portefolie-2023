@@ -59,10 +59,12 @@ export const About =(() =>{
                        <img style={{width:'60%'}} src={process.env.PUBLIC_URL + "/Img/MegSelv.JPG"} alt='meg selv'/>
                     </AboutImg>
 
+                    
+
                 </AboutDiv>
 
                 
-                   
+                <a href="mailto:hausvikanders@gmail.com"><p>Send mail</p></a>
                 
 
 
