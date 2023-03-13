@@ -674,7 +674,7 @@ z-index: 1;
 }
 
 @media (min-width: 2000px){
-  width: 35vw;
+  width: 40vw;
   height: 35vh;
   margin-top: 7rem;
 }
@@ -729,6 +729,11 @@ color: black;
   font-size: 18px;
 }
 
+@media (min-width: 2000px){
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
 `
 
 export const BookBox = styled.div`
@@ -746,7 +751,7 @@ margin-bottom: 2rem;
 @media (min-width: 700px){
   left: 20rem;
   width:35vw;
-  top: 12rem;
+  top: 16rem;
   height: 33vh;
 
 }
