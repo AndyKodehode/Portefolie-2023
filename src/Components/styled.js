@@ -120,6 +120,10 @@ width: 15rem;
   width: 20rem;
 }
 
+@media (min-width: 2000px){
+  left: 1500px;
+}
+
 `
 
 export const BlueBox = styled.div`
@@ -757,7 +761,7 @@ margin-bottom: 2rem;
 @media (min-width: 700px){
   left: 20rem;
   width:35vw;
-  top: 25rem;
+  top: 35rem;
   height: 33vh;
 
 }
