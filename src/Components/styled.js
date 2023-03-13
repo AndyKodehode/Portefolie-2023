@@ -676,7 +676,7 @@ z-index: 1;
 @media (min-width: 2000px){
   width: 35vw;
   height: 35vh;
-  margin-top: 3rem;
+  margin-top: 7rem;
 }
 
 
@@ -765,9 +765,10 @@ margin-bottom: 2rem;
   width: 35rem;
   height: 18rem;
   left: 40rem;
-  top: 30rem;
+  top: 10rem;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
 
 }
