@@ -47,7 +47,7 @@ export const Header = (()=>{
 
                   <div>
                         <HeaderImgDiv>
-                             {/* <img src={require('./Img/meg selv.jpg')}/> */}
+                    
                             <img src={process.env.PUBLIC_URL + "/Img/MegCrop5.jpg"} alt="meg selv" style={{width: '80%'}}/>
                            
                         </HeaderImgDiv>

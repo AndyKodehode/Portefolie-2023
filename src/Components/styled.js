@@ -148,6 +148,11 @@ export const BotomHeaderDiv = styled.div`
   width: 60rem;
  }
 
+ @media (min-width: 2000px){
+  justify-content: center;
+  align-items: center;
+ }
+
 `
 
 export const MegSelv = styled.button`
@@ -751,7 +756,7 @@ margin-bottom: 2rem;
 @media (min-width: 700px){
   left: 20rem;
   width:35vw;
-  top: 16rem;
+  top: 25rem;
   height: 33vh;
 
 }
