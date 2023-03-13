@@ -673,6 +673,12 @@ z-index: 1;
   height: 55vh ;
 }
 
+@media (min-width: 2000px){
+  width: 30vw;
+  height: 30vh;
+  margin-top: 5rem;
+}
+
 
 `
 
