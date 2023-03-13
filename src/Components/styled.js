@@ -745,11 +745,22 @@ margin-bottom: 2rem;
 
 }
 
+
+
 @media (min-width: 1200px){
   width: 22rem;
   height:12rem;
   left: 30rem;
   top:15rem;
+}
+
+@media (min-width: 2000px){
+
+  width: 40rem;
+  height: 20rem;
+  left: 50rem;
+  top: 30rem;
+  
 }
 
 `

@@ -147,10 +147,10 @@ export const Learning = (()=>{
                         </BooksImg>
 
                         <BookBox>
-                        <NavP style={{color:'white', marginLeft: '0.5rem'}}>Rocket Surgery</NavP>
-                        <BookP>
+                            <NavP style={{color:'white', marginLeft: '0.5rem'}}>Rocket Surgery</NavP>
+                           <BookP>
                                 En praktisk bok om hvordan man gjør brukertesting, hva man må tenke på i forkant, underveis og hva observatører skal gjøre
-                        </BookP>
+                           </BookP>
                             
                         </BookBox>
 
