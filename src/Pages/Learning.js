@@ -262,7 +262,7 @@ export const Learning = (()=>{
            
 
 
-        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '3rem'}}>
+        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '5rem', marginTop: '3rem'}}>
                      <H2Learn>Youtube </H2Learn> 
                     <h3>Personer jeg følger</h3>
         </div>
