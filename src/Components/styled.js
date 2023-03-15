@@ -1292,5 +1292,41 @@ color: '#062D4F';
 }
 
 `
+export const ContactDiv = styled.div`
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 3rem;
 
+@media( min-width: 900px){
+margin-left: 10rem;
+margin-top: 8rem;
+}
+
+
+`
  
+
+export const H2Clora = styled.h2`
+//styleName: Portefolie/lora/mobil/h2;
+font-family: 'Lora';
+font-size: 18px;
+font-weight: 400;
+letter-spacing: 0em;
+text-align: left;
+margin-left: 2rem;
+width: 14rem;
+color: #546472;
+@media(min-width: 700px){
+  font-size: 34px;
+  width: 40rem;
+  font-weight: 200px;
+  margin-left: 0rem;
+  text-align: center;
+  
+
+}
+
+
+
+`

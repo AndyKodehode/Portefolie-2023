@@ -1,5 +1,5 @@
 import { MainNav } from "../Components/Nav"
-import { H2, AboutP, AboutDiv, AboutImg, AboutTextDiv, AboutHeaderDiv } from "../Components/styled"
+import { H2, AboutP, AboutDiv, AboutImg, AboutTextDiv, AboutHeaderDiv,  ContactDiv, H2Clora} from "../Components/styled"
 
 
 
@@ -63,8 +63,11 @@ export const About =(() =>{
 
                 </AboutDiv>
 
-                
-                <a href="mailto:hausvikanders@gmail.com"><p>Send mail</p></a>
+                <ContactDiv>
+                   <H2 >Kontakt</H2>
+                   <H2Clora >hausvikanders@gmail.com</H2Clora>
+                   <a href="mailto:hausvikanders@gmail.com"><p>Send mail</p></a>
+                </ContactDiv>
                 
 
 

@@ -254,7 +254,7 @@ export const Learning = (()=>{
             
             </KursDiv>
             
-             <CarouselFlexDiv>
+             <CarouselFlexDiv style={{marginTop: '5rem'}}>
                 <H2Learn >Skillshare&Domestika</H2Learn>
                 <Carousel/>
              </CarouselFlexDiv> 
@@ -262,7 +262,7 @@ export const Learning = (()=>{
            
 
 
-        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '5rem', marginTop: '3rem'}}>
+        <div style={{display:'flex', flexDirection: 'column', alignItems: 'center', marginBottom: '5rem', marginTop: '7rem'}}>
                      <H2Learn>Youtube </H2Learn> 
                     <h3>Personer jeg følger</h3>
         </div>
