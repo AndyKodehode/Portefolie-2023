@@ -1330,3 +1330,34 @@ color: #546472;
 
 
 `
+
+
+export const ProjectP = styled.p`
+font-family: 'Montserrat', sans-serif;
+font-size: 14px;
+font-weight: 200;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+width: 45vw;
+margin-bottom: 2rem;
+color: #546472;
+
+@media (min-width: 700px){
+  width: 24vw;
+  margin-bottom: 3rem;
+  font-size: 16px
+}
+
+@media(min-width: 1100px){
+  width: 20vw;
+  margin-right: 7rem;
+  font-size: 16px;
+}
+
+@media (min-width: 2000px){
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+`

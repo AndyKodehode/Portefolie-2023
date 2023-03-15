@@ -16,7 +16,7 @@ import { StreamingDiv } from "../Components/styled"
 import { ProjectTop } from "../Components/styled"
 import { PimgDiv } from "../Components/styled"
 import { PfonteneImgDiv } from "../Components/styled"
-import { ProjectHeaderP, KodeLimg } from "../Components/styled"
+import { ProjectHeaderP, KodeLimg, ProjectP } from "../Components/styled"
 
 // import { Carousel } from "../Components/carousel"
 
@@ -186,7 +186,7 @@ export const Fontenehus = (()=>{
     <div key={app.id} style={{marginBottom: '10rem'}} >
         <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
         <ProjectImg src={app.bilde}/>
-       <p style={{width:'50%'}}>{app.tekst}</p>
+       <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
     </div>
 
   )
@@ -271,7 +271,7 @@ export const TipCalculator = (()=>{
     <div key={app.id} style={{marginBottom: '10rem'}} >
         <H2>{app.header}</H2>
         <ProjectImg src={app.bilde}/>
-        <p style={{width:'50%'}}>{app.tekst}</p>
+        <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
         <a href={app.link}><p>GitHub</p></a>
     </div>
     
@@ -333,7 +333,7 @@ export const StreamingApp = (()=>{
     <div key={app.id} style={{marginBottom: '10rem'}} >
         <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
         <ProjectImg  src={app.bilde}/>
-       <p style={{width:'50%'}}>{app.tekst}</p>
+        <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
     </div>
 
   )
@@ -396,7 +396,7 @@ export const Kodeloftet= (()=>{
        </KodeLimg>
        <div style={{display:'flex', flexDirection:'column', width: '100%'}}>
         <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
-        <p style={{width:'100%'}}>{app.tekst}</p>
+        <ProjectP style={{width:'100%'}}>{app.tekst}</ProjectP>
       </div>
 
       
