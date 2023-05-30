@@ -65,6 +65,9 @@ const ProjectDataOne =[
 const ProjectDataTwo =
   
         [
+
+
+       
             {
               id: 51,
               header:'TipCalculator',
@@ -87,7 +90,17 @@ const ProjectDataTwo =
               tekst:'Et prosjekt hvor vi skulle koble lyder til bokstaver på tastaturet for å få en trommemaskin',
               bilde: process.env.PUBLIC_URL + "/Img/drum-machine 2.png",
               link: 'https://github.com/AndyKodehode/drum-machine'
+            },
+
+            {
+              id: 54,
+              header:'The good Reminder',
+              tekst:'En app som jeg jobber med akkurat nå. Jeg tok "build a mobile app with firebase" kurset på Scrimba og tenkte jeg ville prøve å lage en egen app, både for det ideen er god og for å lære mer om firbase.',
+              bilde: process.env.PUBLIC_URL + "/Img/TheGoodReminder2.png",
+              link: 'https://the-good-reminder.netlify.app/'
             }
+
+          
 
           
           ]
@@ -272,7 +285,7 @@ export const TipCalculator = (()=>{
         <H2>{app.header}</H2>
         <ProjectImg src={app.bilde}/>
         <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
-        <a href={app.link}><p>GitHub</p></a>
+        <a href={app.link}><p>Se mer</p></a>
     </div>
     
     )

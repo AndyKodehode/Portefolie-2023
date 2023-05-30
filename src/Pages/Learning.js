@@ -148,7 +148,7 @@ export const Learning = (()=>{
 
                         <BookBox>
                             <NavP style={{color:'white', marginLeft: '0.5rem'}}>Rocket Surgery</NavP>
-                           <BookP>
+                           <BookP style={{color:'#292F47'}}>
                                 En praktisk bok om hvordan man gjør brukertesting, hva man må tenke på i forkant, underveis og hva observatører skal gjøre
                            </BookP>
                             
@@ -165,7 +165,7 @@ export const Learning = (()=>{
 
                         <BookBox>
                                 <NavP style={{color:'white', marginLeft: '1.2rem', padding: '0.2rem'}}>Jævla Drittsystem</NavP>
-                                <BookP>
+                                <BookP style={{color:'#292F47'}}>
                                     En bok om viktigheten av å gjøre grundig jobb i forkant når man skal skape et produkt, og konsekvensene av å ikke gjøre forarbeidet godt nok.
                             </BookP>
                             
@@ -182,7 +182,7 @@ export const Learning = (()=>{
 
                             <BookBox>
                                 <NavP style={{color:'white', marginLeft: '0.5rem'}}>100 things</NavP>
-                                <BookP>
+                                <BookP style={{color:'#292F47'}}>
                                         En bok om hvordan mennesker fungerer og hvordan man kan ta hensyn til det i design
                                 </BookP>
                                 
@@ -190,7 +190,27 @@ export const Learning = (()=>{
 
                 </BookFlexDiv>
 
+                <BookFlexDiv>
+                        
+                                
+                        <BooksImg>
+                            <Bimg style={{objectFit:'contain'}}src={process.env.PUBLIC_URL + "/Img/sprint2.jpeg"} alt="rocket surgery" />
+                        </BooksImg>
+
+                        <BookBox>
+                            <NavP style={{color:'white', marginLeft: '0.5rem'}}>Sprint</NavP>
+                            <BookP style={{color:'#292F47'}}>
+                                    En bok om sprint, en metode for å finne riktige løsninger for de essensielle problemene fort.
+                            </BookP>
+                            
+                        </BookBox>
+
+                </BookFlexDiv>
+
             </BookMain>
+
+
+            
 
       
            <KursDiv>
