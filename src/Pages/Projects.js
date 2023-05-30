@@ -281,7 +281,7 @@ export const TipCalculator = (()=>{
   const CalculatorData = ProjectDataTwo.map( app =>
     
 
-    <div key={app.id} style={{marginBottom: '10rem'}} >
+    <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}} >
         <H2>{app.header}</H2>
         <ProjectImg src={app.bilde}/>
         <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
