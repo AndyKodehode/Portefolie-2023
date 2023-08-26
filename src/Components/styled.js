@@ -196,7 +196,7 @@ color:  #364D61;
 
 export const H2Lora = styled.h2`
 //styleName: Portefolie/lora/mobil/h2;
-font-family: 'Lora';
+font-family: 'Roboto';
 font-size: 18px;
 font-weight: 400;
 letter-spacing: 0em;
@@ -527,13 +527,28 @@ color:  #364D61;
 
 `
 
+export const ButtonSmallFrame = styled.button`
+width: 5rem;
+height: 1.5rem;
+border-style: solid;
+
+@media( min-width: 700px){
+  border-width: 3px;
+  width: 6rem;
+  height: 2rem;
+  font-weight: 600;
+}
+
+
+`
+
 export const LButton = styled.button`
 
 width: 5rem;
 height: 1.5rem;
 border-style: solid;
-border-color: white;
-background-color: transparent;
+border-color: #062D4F;
+background-color: #062D4F;
 color: white;
 border-radius: 5px;
 margin-bottom: 3rem;
@@ -545,7 +560,7 @@ margin-bottom: 3rem;
   border-width: 3px;
   width: 6rem;
   height: 2rem;
-  font-weight: 550;
+  font-weight: 600;
 }
 
 `

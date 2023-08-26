@@ -25,9 +25,10 @@ import { KursDiv } from "../Components/styled"
 import { BookMain } from "../Components/styled"
 import { CircleFlexDiv } from "../Components/styled"
 import { CircleText } from "../Components/styled"
-import { LButton } from "../Components/styled"
+// import { LButton } from "../Components/styled"
 import { KursBtn } from "../Components/styled"
 import { Bimg } from "../Components/styled"
+import { ButtonSmallFrame } from "../Components/styled"
 
 import { Link } from "react-router-dom"
 
@@ -232,7 +233,7 @@ export const Learning = (()=>{
 
                             <KursBtn>
                                 <Link to='/IDFkurs'>
-                                  <LButton style={{borderColor:'#DDDBDB', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</LButton>
+                                  <ButtonSmallFrame style={{borderColor:'#DDDBDB', backgroundColor: 'white', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</ButtonSmallFrame>
                                 </Link>
                             </KursBtn>
                        
@@ -263,7 +264,7 @@ export const Learning = (()=>{
                           
                             <KursBtn>
                                   <Link to='/KhAttest'>
-                                    <LButton style={{borderColor:'#DDDBDB', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</LButton>
+                                    <ButtonSmallFrame style={{borderColor:'#DDDBDB', backgroundColor: 'white', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</ButtonSmallFrame>
                                  </Link>
                             </KursBtn>
                              
