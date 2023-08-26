@@ -225,11 +225,11 @@ export const Learning = (()=>{
                                 <img  src={process.env.PUBLIC_URL + "/Img/IDFKuttet.png"} alt= "IDF kurs"  style={{objectFit: 'cover', width:'90%'}}/>
                             </BooksImg>
                                 
-                                <div>
+                                <div  style={{display:'flex', justifyContent:'left', width:'100%', marginLeft: '2rem', marginTop: '2rem'}}>
                                     <BookP style={{color:'#0A2236'}}>
                                         Teoretisk kurs på nett i design-thinking, hvordan gå frem for å løse problemer.
                                     </BookP>
-                               </div>
+                                </div>
 
                             <KursBtn>
                                 <Link to='/IDFkurs'>
@@ -256,9 +256,11 @@ export const Learning = (()=>{
                                 <img  src={process.env.PUBLIC_URL + "/Img/koding.jpg"} alt= "Kodehode kurs"  style={{objectFit: 'cover', width:'90%'}}/>
                             </BooksImg>
 
-                            <BookP style={{color:'#0A2236'}}>
+                            <div style={{display:'flex', justifyContent:'left', width:'100%', marginLeft: '2rem', marginTop: '2rem'}}>
+                                 <BookP style={{color:'#0A2236'}}>
                                 Kurs i HTML, CSS, Javascript, Figma og React.
-                            </BookP>
+                                 </BookP>
+                            </div>
 
                             
                           

@@ -729,7 +729,6 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
-
 `
 
 export const BookP = styled.p`
