@@ -959,7 +959,8 @@ export const KursBtn = styled.div`
 display: flex;
 align-items: right;
 justify-content: right;
-width: 100%
+width: 90%;
+padding-right: 3px;
 
 
 `

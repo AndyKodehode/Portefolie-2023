@@ -233,7 +233,7 @@ export const Learning = (()=>{
 
                             <KursBtn>
                                 <Link to='/IDFkurs'>
-                                  <ButtonSmallFrame style={{borderColor:'#DDDBDB', backgroundColor: 'white', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</ButtonSmallFrame>
+                                  <ButtonSmallFrame style={{borderColor:'#DDDBDB', backgroundColor: 'white', fontWeight:'lighter', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</ButtonSmallFrame>
                                 </Link>
                             </KursBtn>
                        
@@ -264,7 +264,7 @@ export const Learning = (()=>{
                           
                             <KursBtn>
                                   <Link to='/KhAttest'>
-                                    <ButtonSmallFrame style={{borderColor:'#DDDBDB', backgroundColor: 'white', color: '#0E518C', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</ButtonSmallFrame>
+                                    <ButtonSmallFrame style={{borderColor:'#DDDBDB', backgroundColor: 'white', fontWeight:'lighter', padding: '12px', verticalAlign: 'center', textAlign: 'center', lineHeight: '0' }}>Kursbevis</ButtonSmallFrame>
                                  </Link>
                             </KursBtn>
                              
