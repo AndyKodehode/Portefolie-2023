@@ -1194,7 +1194,7 @@ export const ProjectTop = styled.div`
     height: 40vh;
     background-color: #70ACE0 ;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 1rem;
     flex-direction: row;
     
     
@@ -1208,6 +1208,19 @@ margin-top: 3rem;
 
 @media (min-width: 700px){
 width: 35%;
+height: 100%;
+margin-top: 10rem;
+
+
+}`
+
+export const HawiiImgDiv = styled.div`
+
+width: 70%;
+margin-top: 3rem;
+
+@media (min-width: 700px){
+width: 45%;
 height: 100%;
 margin-top: 10rem;
 
@@ -1361,7 +1374,8 @@ color: #546472;
 @media (min-width: 700px){
   width: 24vw;
   margin-bottom: 3rem;
-  font-size: 16px
+  font-size: 16px;
+  margin-top: 3rem;
 }
 
 @media(min-width: 1100px){
@@ -1374,5 +1388,17 @@ color: #546472;
   margin-right: 2rem;
   margin-left: 2rem;
 }
+
+`
+
+export const ProdImgDivOne = styled.div`
+
+
+@media (min-width: 700px){
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start:1;
+            grid-row-end: 4;
+            margin-right: '7rem'}
 
 `

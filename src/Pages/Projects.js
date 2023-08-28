@@ -17,6 +17,7 @@ import { ProjectTop } from "../Components/styled"
 import { PimgDiv } from "../Components/styled"
 import { PfonteneImgDiv } from "../Components/styled"
 import { ProjectHeaderP, KodeLimg, ProjectP } from "../Components/styled"
+import { HawiiImgDiv } from "../Components/styled"
 
 // import { Carousel } from "../Components/carousel"
 
@@ -92,13 +93,13 @@ const ProjectDataTwo =
               link: 'https://github.com/AndyKodehode/drum-machine'
             },
 
-            {
-              id: 54,
-              header:'The good Reminder',
-              tekst:'En app som jeg jobber med akkurat nå. Jeg tok "build a mobile app with firebase" kurset på Scrimba og tenkte jeg ville prøve å lage en egen app, både for det ideen er god og for å lære mer om firbase.',
-              bilde: process.env.PUBLIC_URL + "/Img/TheGoodReminder2.png",
-              link: 'https://the-good-reminder.netlify.app/'
-            }
+            // {
+            //   id: 54,
+            //   header:'The good Reminder',
+            //   tekst:'En app som jeg jobber med akkurat nå. Jeg tok "build a mobile app with firebase" kurset på Scrimba og tenkte jeg ville prøve å lage en egen app, både for det ideen er god og for å lære mer om firbase.',
+            //   bilde: process.env.PUBLIC_URL + "/Img/TheGoodReminder2.png",
+            //   link: 'https://the-good-reminder.netlify.app/'
+            // }
 
           
 
@@ -163,6 +164,35 @@ const ProjectDataFour =[
   
 
   }
+]
+
+const HawiiData = [
+
+  {
+    id:'81',
+    header:'Design',
+    tekst:'Jeg har gjort mest design på siden da det er hva jeg føler meg mest kompetent med. Dette innebar å gjøre flere utkast til løsninger på problemer vi møtte på, men også gi tilbakemeldinger underveis til utviklere om hvordan ting så ut og løsninger for å få et bedre resultat.',
+    bilde:process.env.PUBLIC_URL +  "/Img/Hawii-Figma.png",
+  },
+  {
+    id:'82',
+    header:'Utfordringer',
+    tekst:'I denne seksjonen handlet det om å få inn både tekst, bilde og listeelementer uten at det ble for rotete. Vi prøvde med både ramme og på høykant uten at det føltes riktig, vi endte opp med en løsning hvor man kan se både tekst og bilde med en gang, uten å måtte scrolle, samtidig som det er nok luft til at det ikke føles tettpakket. Det skal være en seksjon hvor du kan se en kort oversikt over hvilke analyseverktøy som er tilgjengelige.',
+    bilde:process.env.PUBLIC_URL + "/Img/Hawii-tjenester.png",
+  },
+  {
+    id:'83',
+    header:'Om oss',
+    tekst:'Vi jobbet en del med å få “om oss” seksjonen til å fungere, jeg føler balansen mellom bildet og tekst er riktig nå og at den ble bra med social proof.',
+    bilde:process.env.PUBLIC_URL + "/Img/Hawii-om oss.png",
+  },
+
+  {
+    id:'84',
+    header:'Læringspunkter',
+    tekst:'Dette prosjektet har gitt meg erfaring med å jobbe opp mot en kundes ønsker og hvordan balansere det med hva som vi mener er riktig design-messig. Hvordan et prosjekt må jobbes med i flere faser for å bli bedre, men også at det kanskje kan kutte på tid ved å planlegges og gjøre endringer i Figma vs kode. Det har gitt meg erfaring i å "forhandle" om egne løsninger og kunne gi slipp på hva jeg tenker er best hvis andre har gode argumenter. Det har lært meg at jeg ikke alltid er den som ser den rette løsningen og det kan være lurt å ha flere øyne som ser ting.',
+    bilde:process.env.PUBLIC_URL + "/Img/Hawii-Iconer.png",
+  },
 ]
 
 
@@ -409,7 +439,7 @@ export const Kodeloftet= (()=>{
        </KodeLimg>
        <div style={{display:'flex', flexDirection:'column', width: '100%'}}>
         <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
-        <ProjectP style={{width:'100%'}}>{app.tekst}</ProjectP>
+        <ProjectP style={{width:'100%', marginTop:'0rem'}}>{app.tekst}</ProjectP>
       </div>
 
       
@@ -431,7 +461,7 @@ export const Kodeloftet= (()=>{
                     <Link to='/StreamingApp'>
                             <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                           </Link>
-                    <Link to='/Fontenehus'>
+                    <Link to='/Hawii'>
                         <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
                     </Link>
               </div>
@@ -450,7 +480,7 @@ export const Kodeloftet= (()=>{
             </ProjectTop>
 
          
-            <StreamingDiv style={{marginBottom: '10rem'}}>
+             <StreamingDiv style={{marginBottom: '10rem'}}>
               {KodeLoftData}
               <video style={{width: '100%'}} src= {process.env.PUBLIC_URL + "/Img/Kodeloftet_logo.mp4"} controls />
              </StreamingDiv>
@@ -458,3 +488,58 @@ export const Kodeloftet= (()=>{
         </LearningFlexDiv>  
   )
 })
+
+
+export const Hawii= (()=>{
+
+
+const HawiiD = HawiiData.map(app =>
+    
+  <div key={app.id} style={{marginBottom: '10rem'}} >
+      <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
+      <ProjectImg  style={{ boxShadow: '1px 2px 9px #F4AAB9'}}src={app.bilde}/>
+      <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
+  </div>
+
+)
+
+return(
+  <LearningFlexDiv>
+          <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right', height:'5rem'}}>
+              <ProjectNavText>
+              <div>
+                  <Link  style={{textDecoration: 'none', color: 'inherit'}}  to='/'>
+                    <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
+                  </Link>
+              </div>
+
+              <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
+                  <Link to='/Kodeloftet'>
+                          <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
+                        </Link>
+                  <Link to='/Fontenehus'>
+                      <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
+                  </Link>
+            </div>
+            </ProjectNavText>
+          </NavStyled>
+        
+          <ProjectTop style={{height: '50vh'}} >
+          
+          <div style={{ display:'flex', flexDirection: 'column'}}>
+                  <LH1 style={{color:'white', marginLeft: '1rem'}}>Hawii</LH1>
+                <BookP style={{marginLeft: '1.2rem'}}> Et prosjekt for Kodeverket som jeg har vært i praksis hos, vi skulle lage en landingsside for Hawii analyse, et selskap som analyserer boligmarkedet og leverer tjenester for nybyggere.
+</BookP>
+          </div>
+              <HawiiImgDiv style={{display:'flex', alignItems:'center', justifyContent:'center'}}>
+                  <LImg style={{width:'100%'}} src={process.env.PUBLIC_URL + "/Img/Hawii-front.png"} alt="hawii img" />
+              </HawiiImgDiv>
+          </ProjectTop>
+
+       
+          <StreamingDiv style={{marginBottom: '10rem'}}>
+            {HawiiD}
+          </StreamingDiv>
+         
+      </LearningFlexDiv>  
+)})
