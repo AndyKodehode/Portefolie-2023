@@ -1381,8 +1381,6 @@ color: #546472;
   margin-left: 2rem;
 }
 
-<<<<<<< Updated upstream
-=======
 `
 
 export const ProdImgDivOne = styled.div`
@@ -1474,5 +1472,4 @@ margin-top: 1.5rem;
 }
 
 
->>>>>>> Stashed changes
 `
