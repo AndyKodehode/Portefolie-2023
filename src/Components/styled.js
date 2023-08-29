@@ -284,8 +284,13 @@ margin-top: 10rem;
 
 export const FrameImgThree = styled.img`
 
-width : 9rem;
+
 margin-top: 1.5rem;
+width: 100%;
+height: 80%;
+margin-right: 5rem;
+margin-bottom: 3rem;
+
 
 @media(min-width: 700px){
    width: 18rem;
@@ -339,8 +344,9 @@ color: '#062D4F';
 
 export const FrameOneDiv = styled.div`
 
-margin-left: 2rem;
+margin-left: 0rem;
 width: 15rem;
+margin-top: 1.5rem;
 
 @media(min-width: 700px){
   width: 40rem;
@@ -1375,4 +1381,98 @@ color: #546472;
   margin-left: 2rem;
 }
 
+<<<<<<< Updated upstream
+=======
+`
+
+export const ProdImgDivOne = styled.div`
+        
+
+
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start:1;
+            grid-row-end: 1;
+            margin-right: 4rem;
+
+            @media (min-width: 700px){
+
+              margin-right: 2rem;
+            }
+
+`
+
+
+
+export const ProdH2div = styled.div`
+        /* grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row: 1;
+        margin-left: 0rem;
+        margin-top: 2rem;
+        height: 1rem; */
+
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row: 1;
+        margin-left: 3rem;
+        margin-top: 1rem;
+
+@media (min-width: 700px){
+
+              grid-column-start: 2;
+              grid-row-start:1;
+              grid-row-end: 1;
+              margin-left: 0rem;
+              margin-right: 3rem;
+              margin-left: 0rem;
+            }
+
+`
+
+export const ProdH3div = styled.div`
+          /* grid-column-start: 3;
+          grid-column-end:5;
+          grid-row-start: 2;
+          grid-row-end: 5;
+          margin-left: 0rem;
+          margin-right: 1rem;
+          margin-bottom: 5rem; */
+
+          grid-column-start: 2;
+          grid-column-end:5;
+          grid-row: 2;
+          margin-left: 3rem;
+          margin-right: 1rem;
+
+
+
+@media (min-width: 700px){
+  
+              grid-column-start: 3;
+              grid-row-start:2;
+              grid-row-end: 4;
+              margin-left: 0rem;
+              margin-right: 3rem;
+          
+            }
+
+`
+
+
+export const ProdFrameOneDiv = styled.div`
+
+margin-left: 0rem;
+width: 15rem;
+margin-top: 1.5rem;
+
+@media(min-width: 700px){
+  width: 20rem;
+  margin-left: 0rem;
+  margin-top: 3rem;
+  margin-right: 0rem;
+}
+
+
+>>>>>>> Stashed changes
 `

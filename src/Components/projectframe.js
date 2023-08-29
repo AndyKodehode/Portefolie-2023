@@ -15,10 +15,60 @@ import { Link } from "react-router-dom"
 
 
 
+
 export const Prosjectframes = (()=>{
 
 return(
 <FrameFlexDiv>
+
+<Link to='/Hawii' style={{textDecoration: 'none', color: 'inherit'}}>
+    <Frame   style={{
+      backgroundColor: '#70ACE0'
+    }}>
+      
+
+          <H2div 
+              style={{   
+              gridColumnStart: 3,
+              gridRowStart:1,
+              gridRowEnd: 1,
+              marginLeft: '0rem',
+              marginRight: '3rem',
+              }}>
+            <H2>Hawii analyse</H2>
+          </H2div>
+
+          <H3div style={{   
+              gridColumnStart: 3,
+              gridRowStart:2,
+              gridRowEnd: 4,
+              marginLeft: '0rem',
+              marginRight: '3rem'}}>
+              <H3
+              style={{color:'#39454F' 
+           }}
+              >
+                En landingsside for en analysebedrift mot boligmarkedet
+              </H3>
+          </H3div>
+        
+
+          <div
+
+          style={{
+            gridColumnStart: 1,
+            gridColumnEnd: 3,
+            gridRowStart:1,
+            gridRowEnd: 4,
+            marginRight: '6.5rem'
+
+              }}>
+          
+              
+              <FrameImgThree style={{width:'100%', marginTop:'3rem',  height: '90%'}} src={process.env.PUBLIC_URL+"/Img/Hawii-kuttet.png" }alt="next"/>
+          </div>
+        </Frame>
+      </Link>
      
     <Link to='/Fontenehus' style={{textDecoration: 'none', color: 'inherit'}}>
         <Frame   style={{
