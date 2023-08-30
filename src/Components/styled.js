@@ -282,25 +282,7 @@ margin-top: 10rem;
  `
 
 
-export const FrameImgThree = styled.img`
 
-
-margin-top: 1.5rem;
-width: 100%;
-height: 80%;
-margin-right: 5rem;
-margin-bottom: 3rem;
-
-
-@media(min-width: 700px){
-   width: 18rem;
-   height: 90%;
-   object-fit: cover;
-   margin-top: 4rem;
-
- }
-
-`
 
 export const H2= styled.h2`
 font-family: 'Montserrat', sans-serif;
@@ -1386,16 +1368,21 @@ color: #546472;
 export const ProdImgDivOne = styled.div`
         
 
-
             grid-column-start: 1;
-            grid-column-end: 2;
+            grid-column-end: 3;
             grid-row-start:1;
-            grid-row-end: 1;
-            margin-right: 4rem;
+            grid-row-end: 4;
+            margin-right: 5rem;
+            object-fit: cover;
+            width: 70%;
+            margin-top: 3rem;
+            
 
             @media (min-width: 700px){
-
-              margin-right: 2rem;
+              margin-top:0rem;
+              margin-right: 10rem;
+              grid-row-end: 3;
+          
             }
 
 `
@@ -1412,15 +1399,16 @@ export const ProdH2div = styled.div`
 
         grid-column-start: 2;
         grid-column-end: 5;
-        grid-row: 1;
+        grid-row: 2;
         margin-left: 3rem;
         margin-top: 1rem;
 
 @media (min-width: 700px){
 
               grid-column-start: 2;
-              grid-row-start:1;
-              grid-row-end: 1;
+              grid-column-end: 4;
+              grid-row-start:2;
+              grid-row-end: 3;
               margin-left: 0rem;
               margin-right: 3rem;
               margin-left: 0rem;
@@ -1438,7 +1426,7 @@ export const ProdH3div = styled.div`
           margin-bottom: 5rem; */
 
           grid-column-start: 2;
-          grid-column-end:5;
+          grid-column-end:4;
           grid-row: 2;
           margin-left: 3rem;
           margin-right: 1rem;
@@ -1447,9 +1435,10 @@ export const ProdH3div = styled.div`
 
 @media (min-width: 700px){
   
-              grid-column-start: 3;
-              grid-row-start:2;
-              grid-row-end: 4;
+              grid-column-start: 2;
+              grid-column-end: 5;
+              grid-row-start:3;
+              grid-row-end: 3;
               margin-left: 0rem;
               margin-right: 3rem;
           
@@ -1459,17 +1448,38 @@ export const ProdH3div = styled.div`
 
 
 export const ProdFrameOneDiv = styled.div`
-
-margin-left: 0rem;
-width: 15rem;
+grid-column-start: 2;
+grid-column-end: 5;
+grid-row: 1;
+margin-left: 1rem;
+width: 12rem;
 margin-top: 1.5rem;
+
 
 @media(min-width: 700px){
   width: 20rem;
-  margin-left: 0rem;
-  margin-top: 3rem;
+  margin-left: 10rem;
+  margin-top: 5rem;
   margin-right: 0rem;
 }
+`
 
+export const FrameImgThree = styled.img`
+
+
+margin-top: 0rem;
+width: 100%;
+margin-right: 0rem;
+object-fit: cover;
+
+
+@media(min-width: 700px){
+   width: 21rem;
+   height: 90%;
+   object-fit: cover;
+   margin-top: 4rem;
+   margin-right: 2rem;
+
+ }
 
 `

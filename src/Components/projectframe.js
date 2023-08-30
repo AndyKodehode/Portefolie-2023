@@ -1,4 +1,4 @@
-import { Frame} from "../Components/styled"
+import { Frame, ProdFrameOneDiv, ProdImgDivOne} from "../Components/styled"
 import { H2 } from "../Components/styled"
 import { H3} from "../Components/styled"
 import { H2div } from "../Components/styled"
@@ -9,6 +9,7 @@ import { FrameImgTwo } from "../Components/styled"
 import { FrameImgThree } from "../Components/styled"
 import { FrameOneDiv } from "../Components/styled"
 import { Link } from "react-router-dom"
+import { ProdH2div, ProdH3div } from "../Components/styled"
 
 
 
@@ -26,47 +27,26 @@ return(
       backgroundColor: '#70ACE0'
     }}>
       
+          <ProdFrameOneDiv>
+            <ProdH2div>
+              <H2>Hawii analyse</H2>
+            </ProdH2div>
 
-          <H2div 
-              style={{   
-              gridColumnStart: 3,
-              gridRowStart:1,
-              gridRowEnd: 1,
-              marginLeft: '0rem',
-              marginRight: '3rem',
-              }}>
-            <H2>Hawii analyse</H2>
-          </H2div>
+            <ProdH3div>
+                <H3
+                style={{color:'#39454F' 
+            }}
+                >
+                  En landingsside for en analysebedrift mot boligmarkedet
+                </H3>
+            </ProdH3div>
+          </ProdFrameOneDiv>
 
-          <H3div style={{   
-              gridColumnStart: 3,
-              gridRowStart:2,
-              gridRowEnd: 4,
-              marginLeft: '0rem',
-              marginRight: '3rem'}}>
-              <H3
-              style={{color:'#39454F' 
-           }}
-              >
-                En landingsside for en analysebedrift mot boligmarkedet
-              </H3>
-          </H3div>
-        
-
-          <div
-
-          style={{
-            gridColumnStart: 1,
-            gridColumnEnd: 3,
-            gridRowStart:1,
-            gridRowEnd: 4,
-            marginRight: '6.5rem'
-
-              }}>
+          <ProdImgDivOne>
           
               
-              <FrameImgThree style={{width:'100%', marginTop:'3rem',  height: '90%'}} src={process.env.PUBLIC_URL+"/Img/Hawii-kuttet.png" }alt="next"/>
-          </div>
+              <FrameImgThree  src={process.env.PUBLIC_URL+"/Img/Hawii-front-kuttet2.png" }alt="next"/>
+          </ProdImgDivOne>
         </Frame>
       </Link>
      
@@ -146,7 +126,7 @@ return(
         </Frame>
     </Link>
 
-
+{/* 
     <Link to='/StreamingApp' style={{textDecoration: 'none', color: 'inherit'}}>
     <Frame   style={{
       backgroundColor: '#70ACE0'
@@ -178,7 +158,7 @@ return(
               <FrameImgThree src={process.env.PUBLIC_URL+"/Img/Colloseum kuttet.jpg" }alt="next"/>
           </div>
         </Frame>
-      </Link>
+      </Link> */}
   
     </FrameFlexDiv>
 )

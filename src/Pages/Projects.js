@@ -165,6 +165,32 @@ const ProjectDataFour =[
   }
 ]
 
+const ProjectDataFive =[
+  {
+    id:'80',
+    header:'Design',
+    tekst:'Jeg har gjort mest design på siden da det er hva jeg føler meg mest kompetent med. Dette innebar å gjøre flere utkast til løsninger på problemer vi møtte på, men også gi tilbakemeldinger underveis til utviklere om hvordan ting så ut og løsninger for å få det bedre resultat.',
+    bilde: process.env.PUBLIC_URL + "/Img/Hawii-Figma.png"
+
+  },
+  {
+    id:'81',
+    header:'Utfordringer',
+    tekst:'I denne seksjonen handlet det om å få inn både tekst, bilde og listeelementer uten at det ble for rotete. Vi prøvde med både ramme og på høykant uten at det føltes riktig, vi endte opp med en løsning hvor man kan se både tekst og bilde med en gang, uten å måtte scrolle, samtidig som det er nok luft til at det ikke føles tettpakket. Det skal være en seksjon hvor du kan se en kort oversikt over hvilke analyseverktøy som er tilgjengelige.',
+    bilde: process.env.PUBLIC_URL + "/Img/Hawii-tjenester.png"
+
+  },
+
+  {
+    id:'82',
+    header:'Læring',
+    tekst:'',
+    bilde:process.env.PUBLIC_URL + "/Img/Icons-analyser.png",
+  
+
+  }
+]
+
 
 // const ProjectCarousel = [
 //   {
@@ -229,10 +255,10 @@ export const Fontenehus = (()=>{
                   </div>
 
                   <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
-                      <Link to='/Streamingapp'>
+                      <Link to='/Kodeloftet'>
                         <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                       </Link>
-                      <Link to='/TipCalculator'>
+                      <Link to='/Hawii'>
                         <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
                       </Link>
                   </div>
@@ -276,6 +302,70 @@ export const Fontenehus = (()=>{
 })
 
 
+
+
+export const Hawii = (()=>{
+
+  const CalculatorData = ProjectDataFive.map( app =>
+    
+
+    <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}} >
+        <H2>{app.header}</H2>
+        <ProjectImg src={app.bilde}/>
+        <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
+        {/* <a href={app.link}><p>Se mer</p></a> */}
+    </div>
+    
+    )
+
+
+    return(
+
+        <LearningFlexDiv>
+        <NavStyled  style={{backgroundColor:'#70ACE0', height:'7rem',zIndex:'0'}}>
+
+          <ProjectNavText>
+              <div>
+                <Link  style={{textDecoration: 'none', color: 'inherit'}} to='/'>
+                  <BookP style={{textAlign: 'center', width: '15vw', marginRight: '0rem'}}>Hjem</BookP> 
+                </Link>
+              </div>
+
+              <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
+                   <Link to='/Fontenehus'>
+                      <BookP style={{textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
+                    </Link>
+                <Link to='/Tipcalculator'>
+                  <BookP style={{textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
+                </Link>
+              </div>
+          </ProjectNavText>
+        </NavStyled>
+       
+         
+         <ProjectTop>
+            <div style={{ display:'flex', flexDirection: 'column', width: '40%', alignItems: 'center', marginRight:'5rem'}}>
+                    <LH1 style={{color:'white', marginLeft: '1rem'}}>Hawii</LH1>
+                    <ProjectHeaderP> Et prosjekt for Kodeverket som jeg har vært i praksis hos, vi skulle lage en landingsside for Hawii analyse, et selskap som analyserer boligmarkedet og leverer tjenester for nybyggere.</ProjectHeaderP>
+            </div>
+            <PimgDiv>
+                <LImg style={{width:'100%', marginLeft: '1rem'}} src={process.env.PUBLIC_URL + "/Img/Hawii-front.png"} alt="mobil img" />
+            </PimgDiv>
+
+
+         </ProjectTop>
+        
+
+        <StreamingDiv>
+          {CalculatorData}
+        </StreamingDiv>
+
+     
+    </LearningFlexDiv>  
+    )
+})
+
+
 export const TipCalculator = (()=>{
 
   const CalculatorData = ProjectDataTwo.map( app =>
@@ -304,7 +394,7 @@ export const TipCalculator = (()=>{
               </div>
 
               <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
-                   <Link to='/Fontenehus'>
+                   <Link to='/Hawii'>
                       <BookP style={{textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                     </Link>
                 <Link to='/StreamingApp'>

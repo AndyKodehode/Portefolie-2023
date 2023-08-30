@@ -11,6 +11,7 @@ import { KodeHodeAttest } from "./Pages/KodehodeAttest"
 import { IdfKurs } from './Pages/IDFbevis';
 import { CV } from './Pages/CV';
 import { Kodeloftet } from './Pages/Projects';
+import { Hawii } from './Pages/Projects';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="IDFkurs" element={<IdfKurs/>} />
         <Route path="CV" element= {<CV/>} />
         <Route path="Kodeloftet" element= {<Kodeloftet/>} />
+        <Route path="Hawii" element= {<Hawii/>} />
 
       </Routes>
    
