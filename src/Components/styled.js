@@ -673,6 +673,25 @@ margin-top: 5rem;
 
 `
 
+export const HawiiLH1 = styled.h1`
+
+font-family: 'Montserrat', sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left;
+color:  #0A2236;
+margin-top: 5rem;
+@media (min-width: 700px){
+  font-size: 75px;
+  margin-top: 2rem;
+  margin-right: 3rem;
+}
+
+
+`
+
 export const BooksImg = styled.div`
 
 display: flex;
@@ -1175,14 +1194,14 @@ export const ProjectTop = styled.div`
    background-color: #70ACE0;
    justify-content: space-evenly;
    padding-top: 5rem;
-   margin-bottom: 10rem;
+   margin-bottom: 14rem;
    z-index: 1;
    /* justify-content: center; */
    @media (min-width: 768px) {
     height: 40vh;
     background-color: #70ACE0 ;
     align-items: center;
-    margin-bottom: 10rem;
+    margin-bottom: 2rem;
     flex-direction: row;
     
     

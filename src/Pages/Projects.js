@@ -16,7 +16,7 @@ import { StreamingDiv } from "../Components/styled"
 import { ProjectTop } from "../Components/styled"
 import { PimgDiv } from "../Components/styled"
 import { PfonteneImgDiv } from "../Components/styled"
-import { ProjectHeaderP, KodeLimg, ProjectP } from "../Components/styled"
+import { ProjectHeaderP, KodeLimg, ProjectP, HawiiLH1 } from "../Components/styled"
 
 // import { Carousel } from "../Components/carousel"
 
@@ -92,13 +92,13 @@ const ProjectDataTwo =
               link: 'https://github.com/AndyKodehode/drum-machine'
             },
 
-            {
-              id: 54,
-              header:'The good Reminder',
-              tekst:'En app som jeg jobber med akkurat nå. Jeg tok "build a mobile app with firebase" kurset på Scrimba og tenkte jeg ville prøve å lage en egen app, både for det ideen er god og for å lære mer om firbase.',
-              bilde: process.env.PUBLIC_URL + "/Img/TheGoodReminder2.png",
-              link: 'https://the-good-reminder.netlify.app/'
-            }
+            // {
+            //   id: 54,
+            //   header:'The good Reminder',
+            //   tekst:'En app som jeg jobber med akkurat nå. Jeg tok "build a mobile app with firebase" kurset på Scrimba og tenkte jeg ville prøve å lage en egen app, både for det ideen er god og for å lære mer om firbase.',
+            //   bilde: process.env.PUBLIC_URL + "/Img/TheGoodReminder2.png",
+            //   link: 'https://the-good-reminder.netlify.app/'
+            // }
 
           
 
@@ -170,22 +170,26 @@ const ProjectDataFive =[
     id:'80',
     header:'Design',
     tekst:'Jeg har gjort mest design på siden da det er hva jeg føler meg mest kompetent med. Dette innebar å gjøre flere utkast til løsninger på problemer vi møtte på, men også gi tilbakemeldinger underveis til utviklere om hvordan ting så ut og løsninger for å få det bedre resultat.',
-    bilde: process.env.PUBLIC_URL + "/Img/Hawii-Figma.png"
+    bilde: process.env.PUBLIC_URL + "/Img/Hawii-Figma.png",
+    link: 'https://www.hawii.no'
 
   },
   {
     id:'81',
     header:'Utfordringer',
     tekst:'I denne seksjonen handlet det om å få inn både tekst, bilde og listeelementer uten at det ble for rotete. Vi prøvde med både ramme og på høykant uten at det føltes riktig, vi endte opp med en løsning hvor man kan se både tekst og bilde med en gang, uten å måtte scrolle, samtidig som det er nok luft til at det ikke føles tettpakket. Det skal være en seksjon hvor du kan se en kort oversikt over hvilke analyseverktøy som er tilgjengelige.',
-    bilde: process.env.PUBLIC_URL + "/Img/Hawii-tjenester.png"
+    bilde: process.env.PUBLIC_URL + "/Img/Hawii-tjenester.png",
+    link: 'https://www.hawii.no'
 
   },
 
   {
     id:'82',
-    header:'Læring',
+    header:'Analyser',
     tekst:'',
     bilde:process.env.PUBLIC_URL + "/Img/Icons-analyser.png",
+    link: 'https://www.hawii.no/bedrift/analyse'
+    ,
   
 
   }
@@ -309,11 +313,11 @@ export const Hawii = (()=>{
   const CalculatorData = ProjectDataFive.map( app =>
     
 
-    <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}} >
+    <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'left'}} >
         <H2>{app.header}</H2>
-        <ProjectImg src={app.bilde}/>
-        <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
-        {/* <a href={app.link}><p>Se mer</p></a> */}
+        <ProjectImg style={{boxShadow: '1px 2px 9px #F4AAB9'}} src={app.bilde}/>
+        <ProjectP style={{width:'50%', marginTop: '2rem'}}>{app.tekst}</ProjectP>
+        <a href={app.link}><p>Se siden her</p></a>
     </div>
     
     )
@@ -344,8 +348,8 @@ export const Hawii = (()=>{
        
          
          <ProjectTop>
-            <div style={{ display:'flex', flexDirection: 'column', width: '40%', alignItems: 'center', marginRight:'5rem'}}>
-                    <LH1 style={{color:'white', marginLeft: '1rem'}}>Hawii</LH1>
+            <div style={{ display:'flex', flexDirection: 'column', width: '40%', alignItems: 'center', marginRight:'2rem', marginBottom: '2rem'}}>
+                    <HawiiLH1 style={{color:'white'}}>Hawii</HawiiLH1>
                     <ProjectHeaderP> Et prosjekt for Kodeverket som jeg har vært i praksis hos, vi skulle lage en landingsside for Hawii analyse, et selskap som analyserer boligmarkedet og leverer tjenester for nybyggere.</ProjectHeaderP>
             </div>
             <PimgDiv>
@@ -371,7 +375,7 @@ export const TipCalculator = (()=>{
   const CalculatorData = ProjectDataTwo.map( app =>
     
 
-    <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'center'}} >
+    <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'left'}} >
         <H2>{app.header}</H2>
         <ProjectImg src={app.bilde}/>
         <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
