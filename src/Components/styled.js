@@ -686,7 +686,7 @@ margin-top: 5rem;
 @media (min-width: 700px){
   font-size: 75px;
   margin-top: 2rem;
-  margin-right: 3rem;
+  margin-right: 8rem;
 }
 
 
@@ -1502,3 +1502,4 @@ object-fit: cover;
  }
 
 `
+

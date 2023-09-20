@@ -186,8 +186,19 @@ const ProjectDataFive =[
   {
     id:'82',
     header:'Analyser',
-    tekst:'',
-    bilde:process.env.PUBLIC_URL + "/Img/Icons-analyser.png",
+    tekst:'I undersidene for analyser og markedsanalyser hadde vi en utfordring med mye tekst i header. Det var litt rotete og vanskelig å lese. Løsningen ble etter hvert å dele teksten opp i 3 mindre biter slik at informasjonen ble lettere å fordøye. I tillegg fikk vi tilbakemeldinger på at det burde være bilde eller ikoner til de forskjellige seksjonene, og at ikonene burde være noenlunde moderne. Dermed tok jeg ikoner jeg fant tilgjengelig og la til farge og skygge på dem.',
+    bilde:process.env.PUBLIC_URL + "/Img/Analyser.png",
+    link: 'https://www.hawii.no/bedrift/analyse'
+    ,
+  
+
+  },
+
+  {
+    id:'82',
+    header:'Læring',
+    tekst: 'Jeg lærte i dette prosjektet å gi og ta feedback, å kunne gå en runde med sine egne darlings og finne nye løsninger. Erfaring i hvor mye prøving og feiling som må til før man finner det som funker. Hvordan man må begrunne løsninger for kundene og ikke bare spørre kunden om tilbakemelding. Viktigheten av å ha en sammenhengende design, i forhold til farger, alignment og utforming.',
+    bilde:process.env.PUBLIC_URL + "/Img/Hawii i media.png",
     link: 'https://www.hawii.no/bedrift/analyse'
     ,
   
