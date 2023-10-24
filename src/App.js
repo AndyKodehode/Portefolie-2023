@@ -25,7 +25,7 @@ function App() {
         <Route path="About" element={<About/>} />
         <Route path="Fontenehus" element={<Fontenehus/>} />
         <Route path="TipCalculator" element={<TipCalculator/>} />
-        <Route path="StreamingApp" element={<StreamingApp/>} />
+        {/* <Route path="StreamingApp" element={<StreamingApp/>} /> */}
         <Route path="Learning" element={<Learning/>} />
         <Route path="KhAttest" element={<KodeHodeAttest/>} />
         <Route path="IDFkurs" element={<IdfKurs/>} />

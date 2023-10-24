@@ -196,18 +196,19 @@ color:  #364D61;
 
 export const H2Lora = styled.h2`
 //styleName: Portefolie/lora/mobil/h2;
-font-family: 'Roboto';
-font-size: 18px;
-font-weight: 400;
-letter-spacing: 0em;
-text-align: left;
+font-family: 'Lora';
+ font-style: 'italic'; 
+ font-size: 20px; 
+ font-weight: 400; 
+ letter-spacing: 0em; 
+ text-align: left; 
 margin-left: 2rem;
-width: 14rem;
+width: 14rem; 
 color: #546472;
 @media(min-width: 700px){
   font-size: 34px;
   width: 40rem;
-  font-weight: 200px;
+  font-weight: 400;
   margin-left: 4rem;
   
 
@@ -1042,6 +1043,8 @@ color: '#062D4F';
 @media( min-width: 700px){
   
   font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 3rem;
 
 
 }
@@ -1060,6 +1063,7 @@ margin-bottom: 5rem;
 @media( min-width: 700px){
   
 width: 50%;
+margin-top: 1rem;
 
 
 }
@@ -1179,7 +1183,7 @@ margin-top: 5rem;
 
 @media(min-width: 700px){
   width: 50%;
-  margin-top: 30rem;
+  margin-top: 20rem;
 }
 
 
@@ -1364,6 +1368,8 @@ text-align: left;
 width: 45vw;
 margin-bottom: 2rem;
 color: #546472;
+width: 100%;
+line-height: 25px;
 
 @media (min-width: 700px){
   width: 24vw;
@@ -1372,9 +1378,10 @@ color: #546472;
 }
 
 @media(min-width: 1100px){
-  width: 20vw;
+  width: 70%;
   margin-right: 7rem;
   font-size: 16px;
+  
 }
 
 @media (min-width: 2000px){

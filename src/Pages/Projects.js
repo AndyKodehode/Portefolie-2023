@@ -1,5 +1,5 @@
 
-import { BookP} from "../Components/styled"
+import { BookP, ButtonSmallFrame, KursBtn} from "../Components/styled"
 import { LH1 } from "../Components/styled"
 import { LImg } from "../Components/styled"
 import { LearningFlexDiv } from "../Components/styled"
@@ -54,9 +54,9 @@ const ProjectDataOne =[
 
         {
           id: 49,
-          header: 'Gjenstående',
-          tekst: ' Den neste delen av prosessen blir å finne en måte å lagre data på, og et CMS verktøy for å skape innhold. Fremover vil jeg samarbeide med noen andre designere og programmere for å få det ferdig.',
-          bilde: process.env.PUBLIC_URL + "/Img/Fontenehuset Figma redesign.png"
+          header: 'Prosjektet videre',
+          tekst: ' I skrivende stund jobber vi med å begynne et samarbeid mellom Kodeverket og Kodeloftet hvor vi skal jobbe videre med appen. Jeg blir prosjektleder i prosjektet og målet er å få mest mulig aktivitet på Fontenehuset og at vi får en app huset kan ha et eierskap til',
+          bilde: process.env.PUBLIC_URL + "/Img/prosjektplan.png"
         }
       
       
@@ -106,38 +106,38 @@ const ProjectDataTwo =
           ]
 
 
-const ProjectDataThree =      [
+// const ProjectDataThree =      [
 
-  {
-    id: 65,
-    header:'Ide og prosess',
-    tekst:'Dette er et designprosjekt jeg har gjort sammen med min bror i 2020. Vi fikk en ide om en problemstilling som vi syns var gøy jobbe frem en løsning på. Hva om vi kunne lage en plattform som samlet alle streaming-tjenester på et sted?. En tjeneste som gjør det lettere å finne og lagre det du liker.Deretter kom ideen om å gjøre det til en sosial plattform hvor man kan dele og snakke sammen om filmer/serier, se andre sine lister og favoritter. Det var også en måte å lære meg XD på, i senere tid har jeg brukt mer Figma.',
-    bilde: process.env.PUBLIC_URL + "/Img/skisse 3.jpg"
-  },
+//   {
+//     id: 65,
+//     header:'Ide og prosess',
+//     tekst:'Dette er et designprosjekt jeg har gjort sammen med min bror i 2020. Vi fikk en ide om en problemstilling som vi syns var gøy jobbe frem en løsning på. Hva om vi kunne lage en plattform som samlet alle streaming-tjenester på et sted?. En tjeneste som gjør det lettere å finne og lagre det du liker.Deretter kom ideen om å gjøre det til en sosial plattform hvor man kan dele og snakke sammen om filmer/serier, se andre sine lister og favoritter. Det var også en måte å lære meg XD på, i senere tid har jeg brukt mer Figma.',
+//     bilde: process.env.PUBLIC_URL + "/Img/skisse 3.jpg"
+//   },
 
 
-  {
-    id: 66,
-    header: 'Wireframes',
-    tekst: 'Vi lagde skisser i XD for å lage en oversikt, et bilde av hvordan vi ville ha det uten å bli for opphengt i detaljer. Det ble hentet mye inspiriasjon fra andre plattformer, hvordan ser Netlix, Amazon og HBO ut, hva har de til felles, hva liker vi og liker vi ikke.',
-    bilde: process.env.PUBLIC_URL + "/Img/wireframe.png"
+//   {
+//     id: 66,
+//     header: 'Wireframes',
+//     tekst: 'Vi lagde skisser i XD for å lage en oversikt, et bilde av hvordan vi ville ha det uten å bli for opphengt i detaljer. Det ble hentet mye inspiriasjon fra andre plattformer, hvordan ser Netlix, Amazon og HBO ut, hva har de til felles, hva liker vi og liker vi ikke.',
+//     bilde: process.env.PUBLIC_URL + "/Img/wireframe.png"
 
-  },
-  {
-    id: 67,
-    header: 'Design',
-    tekst: 'Brukeren skal kunne navigere seg gjennom egne lister av favoritter, samt se andre profiler og venners lister og favoritter.',
-    bilde: process.env.PUBLIC_URL + "/Img/Colloseum Friends.jpg"
-  }, 
+//   },
+//   {
+//     id: 67,
+//     header: 'Design',
+//     tekst: 'Brukeren skal kunne navigere seg gjennom egne lister av favoritter, samt se andre profiler og venners lister og favoritter.',
+//     bilde: process.env.PUBLIC_URL + "/Img/Colloseum Friends.jpg"
+//   }, 
 
-  {
-    id: 68,
-    header: 'Prototype',
-    tekst: ' Jeg fikk første erfaring med å sette sammen alle overganger, funksjoner og prøve å få et prosjekt  til å flyte greit.',
-    bilde: process.env.PUBLIC_URL + "/Img/prototype.png"
-  }
+//   {
+//     id: 68,
+//     header: 'Prototype',
+//     tekst: ' Jeg fikk første erfaring med å sette sammen alle overganger, funksjoner og prøve å få et prosjekt  til å flyte greit.',
+//     bilde: process.env.PUBLIC_URL + "/Img/prototype.png"
+//   }
 
-]
+// ]
 
 const ProjectDataFour =[
   {
@@ -150,7 +150,7 @@ const ProjectDataFour =[
   {
     id:'71',
     header:'Kickoff',
-    tekst:'For å lage blest rundt prosjektet og vise alle interesserte hva det går ut på laget vi en Kickoff. Masse folk kom på huset og det ble suksess. Jeg laget designet til promoteringen av eventet.',
+    tekst:'For å lage blest rundt prosjektet og vise alle interesserte hva det går ut på laget vi en Kickoff.  Masse folk kom på huset og det ble suksess. Jeg laget designet til promoteringen av eventet.',
     bilde: process.env.PUBLIC_URL + "/Img/Kick_off.png"
 
   },
@@ -238,9 +238,10 @@ export const Fontenehus = (()=>{
       
   
     <div key={app.id} style={{marginBottom: '10rem'}} >
-        <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
+        
         <ProjectImg src={app.bilde}/>
-       <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
+         <ProjectH2 >{app.header}</ProjectH2>
+        <ProjectP >{app.tekst}</ProjectP>
     </div>
 
   )
@@ -325,9 +326,9 @@ export const Hawii = (()=>{
     
 
     <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'left'}} >
-        <H2>{app.header}</H2>
         <ProjectImg style={{boxShadow: '1px 2px 9px #F4AAB9'}} src={app.bilde}/>
-        <ProjectP style={{width:'50%', marginTop: '2rem'}}>{app.tekst}</ProjectP>
+        <ProjectH2 >{app.header}</ProjectH2>
+        <ProjectP>{app.tekst}</ProjectP>
         <a href={app.link}><p>Se siden her</p></a>
     </div>
     
@@ -387,10 +388,13 @@ export const TipCalculator = (()=>{
     
 
     <div key={app.id} style={{marginBottom: '10rem', display: 'flex', flexDirection: 'column', alignItems: 'left'}} >
-        <H2>{app.header}</H2>
+        
         <ProjectImg src={app.bilde}/>
-        <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
+        <ProjectH2>{app.header}</ProjectH2>
+        <ProjectP >{app.tekst}</ProjectP>
         <a href={app.link}><p>Se mer</p></a>
+        
+       
     </div>
     
     )
@@ -412,7 +416,7 @@ export const TipCalculator = (()=>{
                    <Link to='/Hawii'>
                       <BookP style={{textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                     </Link>
-                <Link to='/StreamingApp'>
+                <Link to='/Kodeloftet'>
                   <BookP style={{textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
                 </Link>
               </div>
@@ -443,63 +447,63 @@ export const TipCalculator = (()=>{
 })
 
 
-export const StreamingApp = (()=>{
+// export const StreamingApp = (()=>{
 
-  const StreamingData= ProjectDataThree.map(app =>
+//   const StreamingData= ProjectDataThree.map(app =>
     
 
-    <div key={app.id} style={{marginBottom: '10rem'}} >
-        <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
-        <ProjectImg  src={app.bilde}/>
-        <ProjectP style={{width:'50%'}}>{app.tekst}</ProjectP>
-    </div>
+//     <div key={app.id} style={{marginBottom: '10rem'}} >
+//         <ProjectH2 >{app.header}</ProjectH2>
+//         <ProjectImg  src={app.bilde}/>
+//         <ProjectP >{app.tekst}</ProjectP>
+//     </div>
 
-  )
+//   )
 
 
-    return(
+//     return(
          
-        <LearningFlexDiv>
-            <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right', height:'5rem'}}>
-                <ProjectNavText>
-                <div>
-                    <Link  style={{textDecoration: 'none', color: 'inherit'}}  to='/'>
-                      <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
-                    </Link>
-                </div>
+//         <LearningFlexDiv>
+//             <NavStyled  style={{backgroundColor:'#70ACE0', justifyContent: 'right', height:'5rem'}}>
+//                 <ProjectNavText>
+//                 <div>
+//                     <Link  style={{textDecoration: 'none', color: 'inherit'}}  to='/'>
+//                       <BookP style={{ textAlign: 'center', width: '15vw', marginRight: '1rem', justifySelf: 'left'}}>Hjem</BookP> 
+//                     </Link>
+//                 </div>
 
-                <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
-                    <Link to='/TipCalculator'>
-                            <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
-                          </Link>
-                    <Link to='/Kodeloftet'>
-                        <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
-                    </Link>
-              </div>
-              </ProjectNavText>
-            </NavStyled>
+//                 <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
+//                     <Link to='/TipCalculator'>
+//                             <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
+//                           </Link>
+//                     <Link to='/Kodeloftet'>
+//                         <BookP style={{ textAlign: 'center', width: '20vw', marginRight: '0rem'}}>Neste prosjekt</BookP> 
+//                     </Link>
+//               </div>
+//               </ProjectNavText>
+//             </NavStyled>
           
-            <ProjectTop style={{height: '70vh'}} >
+//             <ProjectTop style={{height: '70vh'}} >
             
-            <div style={{ display:'flex', flexDirection: 'column'}}>
-                    <LH1 style={{color:'white', marginLeft: '2.8rem'}}>StreamingApp</LH1>
-                    <BookP style={{marginLeft: '3rem'}}> Et kreativt prosjekt som jeg gjorde i 2019/20</BookP>
-            </div>
-                <PimgDiv>
-                    <LImg style={{width:'80%', marginLeft: '3rem'}} src={process.env.PUBLIC_URL + "/Img/streaming-home.jpg"} alt="mobil img" />
-                </PimgDiv>
-            </ProjectTop>
+//             <div style={{ display:'flex', flexDirection: 'column'}}>
+//                     <LH1 style={{color:'white', marginLeft: '2.8rem'}}>StreamingApp</LH1>
+//                     <BookP style={{marginLeft: '3rem'}}> Et kreativt prosjekt som jeg gjorde i 2019/20</BookP>
+//             </div>
+//                 <PimgDiv>
+//                     <LImg style={{width:'80%', marginLeft: '3rem'}} src={process.env.PUBLIC_URL + "/Img/streaming-home.jpg"} alt="mobil img" />
+//                 </PimgDiv>
+//             </ProjectTop>
 
          
-            <StreamingDiv>
-              {StreamingData}
-             </StreamingDiv>
+//             <StreamingDiv>
+//               {StreamingData}
+//              </StreamingDiv>
            
-        </LearningFlexDiv>  
+//         </LearningFlexDiv>  
         
        
-    )
-})
+//     )
+// })
 
 
 
@@ -513,8 +517,8 @@ export const Kodeloftet= (()=>{
         <ProjectImg style={{width: '70%'}} src={app.bilde}/>
        </KodeLimg>
        <div style={{display:'flex', flexDirection:'column', width: '100%'}}>
-        <ProjectH2 style={{fontSize: '25px'}}>{app.header}</ProjectH2>
-        <ProjectP style={{width:'100%'}}>{app.tekst}</ProjectP>
+        <ProjectH2 >{app.header}</ProjectH2>
+        <ProjectP >{app.tekst}</ProjectP>
       </div>
 
       
@@ -533,7 +537,7 @@ export const Kodeloftet= (()=>{
                 </div>
 
                 <div style={{display:'flex', flexDirection:'row', marginRight: '1rem'}}>
-                    <Link to='/StreamingApp'>
+                    <Link to='/TipCalculator'>
                             <BookP style={{ textAlign: 'center', width: '25vw', marginRight: '0rem'}}>Forrige prosjekt</BookP> 
                           </Link>
                     <Link to='/Fontenehus'>
